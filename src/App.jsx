@@ -173,7 +173,10 @@ function App() {
           {/* Services Section */} 
           <section id='services'>
             <div className=' py-[50px] '>
-              <h3 className='text-center text-[30px] md:text-[45px] lg:text-[50px] font-semibold pb-5'>My Services</h3>
+              <h3 className='text-center text-[30px] md:text-[45px] lg:text-[50px] font-semibold pb-2'>My Services</h3>
+              <p className='text-center text-[18px] md:text-[24px] pb-5'>
+                I offer design-focused frontend development tailored to your business needs.
+              </p>
               <div className='lg:hidden'>
                 <div className='flex flex-col md:flex-row flex-wrap items-center justify-center gap-[40px]'>
                     <div>
@@ -302,7 +305,10 @@ function App() {
       {/* Skills Section */}
       <section id='skills'>
         <div className='py-[30px] md:py-[50px] lg:py-[80px] px-[20px] md:[35px] lg:px-[50px] xl:px-[100px]'>
-          <h3 className='text-center text-[28px] md:text-[45px] lg:text-[50px] font-semibold pb-10'>My Skills</h3>
+          <h3 className='text-center text-[28px] md:text-[45px] lg:text-[50px] font-semibold pb-2'>My Skills</h3>
+          <p className='text-center text-[18px] md:text-[24px] pb-5 md:pb-10 xl:pb-14'>
+            Tools and technologies I use to build seamless, interactive web experiences. 
+          </p>
           <div  className='
           flex items-center justify-center '>
             <div className='grid grid-cols-3'>
