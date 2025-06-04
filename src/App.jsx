@@ -114,13 +114,14 @@ function App() {
         </div>
       </div>
 
-      <div id='about' className='bg-[#f0f1f0]'>
+      <div className='bg-[#f0f1f0]'>
           {/* About Section */}
-          <div className='py-[30px] md:py-[50px] lg:py-[80px] px-[20px] md:[35px] lg:px-[50px] xl:px-[100px] 
-          flex flex-col lg:flex-row items-center gap-10'>
+          <section id='about'>
+            <div className='py-[30px] md:py-[50px] lg:py-[80px] px-[20px] md:[35px] lg:px-[50px] xl:px-[100px] 
+            flex flex-col lg:flex-row items-center gap-10'>
             <div className='w-full lg:w-1/2'>
-              <h2 className='text-center md:text-start text-[40px] lg:text-[60px] font-bold'>About me</h2>
-              <div className='text-justify space-y-4'>
+              <h2 className='text-center md:text-start text-[40px] lg:text-[50px] font-semibold'>About me</h2>
+                <div className='text-justify space-y-4'>
                   <p className=''>
                     Greetings, I'm Owigho Ufuoma Annabel, a dedicated Frontend Developer from Delta State, Nigeria. My academic journey 
                     unfolded in the realm of Computer Science, serving as a canvas for my journey into the dynamic realm of web development 
@@ -140,345 +141,356 @@ function App() {
                     learning and improvement. Beyond code, I'm a relentless explorer of design trends and a connoisseur of user experiences. 
                     Let's collaborate and turn your visionary ideas into awe-inspiring realities.
                   </p>
-              </div>
-            </div>
-            <div className='w-full lg:w-1/2 xl:pl-14 space-y-5 md:space-y-10'>
-              <div className='bg-[#e0e0e0] px-1 py-1 -skew-x-8'>
-                <div className='bg-[#181918] px-10 py-10 text-center'>
-                  <a href=" https://github.com/annaelowigho">
-                    <button className="relative text-[#e0e0e0] font-semibold text-[20px] md:text-[22px] cursor-pointer after:content-[''] after:absolute 
-                    after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-[#e0e0e0] after:scale-x-0 after:origin-right 
-                    after:transition-transform after:duration-500 hover:after:scale-x-100 hover:after:origin-left">
-                      Checkout my GitHub Profile
-                    </button>
-                  </a>
                 </div>
               </div>
-              <div className='bg-[#e0e0e0] px-1 py-1 -skew-x-8'>
-                <div className='bg-[#181918] px-10 py-10 text-center'>
-                  <a href="https://drive.google.com/file/d/1NpFj0QIw9AZJERx2pNJhkWVNOM0bgoJY/view?usp=drive_link">
-                    <button className="relative text-[#e0e0e0] font-semibold text-[20px] md:text-[22px] cursor-pointer after:content-[''] after:absolute 
-                    after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-[#e0e0e0] after:scale-x-0 after:origin-right 
-                    after:transition-transform after:duration-500 hover:after:scale-x-100 hover:after:origin-left">
-                      Checkout my CV
-                    </button>
-                  </a>
+              <div className='w-full lg:w-1/2 xl:pl-14 space-y-5 md:space-y-10'>
+                <div className='bg-[#e0e0e0] px-1 py-1 -skew-x-8'>
+                  <div className='bg-[#181918] px-10 py-10 text-center'>
+                    <a href=" https://github.com/annaelowigho">
+                      <button className="relative text-[#e0e0e0] font-semibold text-[20px] md:text-[22px] cursor-pointer after:content-[''] after:absolute 
+                      after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-[#e0e0e0] after:scale-x-0 after:origin-right 
+                      after:transition-transform after:duration-500 hover:after:scale-x-100 hover:after:origin-left">
+                        Checkout my GitHub Profile
+                      </button>
+                    </a>
+                  </div>
+                </div>
+                <div className='bg-[#e0e0e0] px-1 py-1 -skew-x-8'>
+                  <div className='bg-[#181918] px-10 py-10 text-center'>
+                    <a href="https://drive.google.com/file/d/1NpFj0QIw9AZJERx2pNJhkWVNOM0bgoJY/view?usp=drive_link">
+                      <button className="relative text-[#e0e0e0] font-semibold text-[20px] md:text-[22px] cursor-pointer after:content-[''] after:absolute 
+                      after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-[#e0e0e0] after:scale-x-0 after:origin-right 
+                      after:transition-transform after:duration-500 hover:after:scale-x-100 hover:after:origin-left">
+                        Checkout my CV
+                      </button>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </section>
 
           {/* Services Section */} 
-          <div id='services' className=' py-[50px] '>
-            <h3 className='text-center text-[30px] md:text-[45px] lg:text-[50px] font-semibold pb-5'>My Services</h3>
-            <div className='lg:hidden'>
-              <div className='flex flex-col md:flex-row flex-wrap items-center justify-center gap-[40px]'>
-                  <div>
-                    <div className='bg-[#e0e0e0] h-[150px] w-[300px] flex flex-col items-center justify-center'>
-                        <img src="/creative-design-icon-removebg-preview.png" alt="Creative Design" className="w-[80px] h-[80px]" />
-                        <p className="text-[#414141] text-[18px] font-semibold">Creative Design</p>
+          <section id='services'>
+            <div className=' py-[50px] '>
+              <h3 className='text-center text-[30px] md:text-[45px] lg:text-[50px] font-semibold pb-5'>My Services</h3>
+              <div className='lg:hidden'>
+                <div className='flex flex-col md:flex-row flex-wrap items-center justify-center gap-[40px]'>
+                    <div>
+                      <div className='bg-[#e0e0e0] h-[150px] w-[300px] flex flex-col items-center justify-center'>
+                          <img src="/creative-design-icon-removebg-preview.png" alt="Creative Design" className="w-[80px] h-[80px]" />
+                          <p className="text-[#414141] text-[18px] font-semibold">Creative Design</p>
+                      </div>
+                      <div className='h-[150px] w-[300px] shadow-[0_10px_20px_#e0e0e0] flex justify-center items-center px-5'>
+                          <p className="text-[#414141] text-center">
+                              Innovation and Creativity are my forte. I bring fresh, inventive ideas to your project, making you stand out.
+                          </p>
+                      </div>
                     </div>
-                    <div className='h-[150px] w-[300px] shadow-[0_10px_20px_#e0e0e0] flex justify-center items-center px-5'>
-                        <p className="text-[#414141] text-center">
-                            Innovation and Creativity are my forte. I bring fresh, inventive ideas to your project, making you stand out.
-                        </p>
+                    <div>
+                      <div className='bg-[#e0e0e0] h-[150px] w-[300px] flex flex-col items-center justify-center'>
+                          <img src="/responsive-icon.png" alt="Creative Design" className="w-[60px] h-[60px]" />
+                          <p className="text-[#414141] text-[18px] font-semibold">Responsive Design</p>
+                      </div>
+                      <div className='h-[150px] w-[300px] shadow-[0_20px_40px_#e0e0e0] flex justify-center items-center px-5'>
+                          <p className="text-[#414141] text-center">
+                              Seamless across all devices. Your project will look and work flawlessly, no matter the screen size.
+                          </p>
+                      </div>
                     </div>
-                  </div>
-                  <div>
-                    <div className='bg-[#e0e0e0] h-[150px] w-[300px] flex flex-col items-center justify-center'>
-                        <img src="/responsive-icon.png" alt="Creative Design" className="w-[60px] h-[60px]" />
-                        <p className="text-[#414141] text-[18px] font-semibold">Responsive Design</p>
+                    <div>
+                      <div className='bg-[#e0e0e0] h-[150px] w-[300px] flex flex-col items-center justify-center'>
+                          <img src="/clean-design-icon-removebg-preview.png" alt="Creative Design" className="w-[80px] h-[80px]" />
+                          <p className="text-[#414141] text-[18px] font-semibold">Clean and Nice Design</p>
+                      </div>
+                      <div className='h-[150px] w-[300px] shadow-[0_20px_40px_#e0e0e0] flex justify-center items-center px-5'>
+                          <p className="text-[#414141] text-center">
+                              Simplicity meets sophistication. I deliver polished, efficient, and maintainable solutions.
+                          </p>
+                      </div>
                     </div>
-                    <div className='h-[150px] w-[300px] shadow-[0_20px_40px_#e0e0e0] flex justify-center items-center px-5'>
-                        <p className="text-[#414141] text-center">
-                            Seamless across all devices. Your project will look and work flawlessly, no matter the screen size.
-                        </p>
+                    <div>
+                      <div className='bg-[#e0e0e0] h-[150px] w-[300px] flex flex-col items-center justify-center'>
+                          <img src="/design-support-icon-removebg-preview.png" alt="Creative Design" className="w-[60px] h-[60px]" />
+                          <p className="text-[#414141] text-[18px] font-semibold">Support</p>
+                      </div>
+                      <div className='h-[150px] w-[300px] shadow-[0_20px_40px_#e0e0e0] flex justify-center items-center px-5'>
+                          <p className="text-[#414141] text-center">
+                              I've got your back beyond launch. Count on me for consistent support and continuous improvement.
+                          </p>
+                      </div>
                     </div>
-                  </div>
-                  <div>
-                    <div className='bg-[#e0e0e0] h-[150px] w-[300px] flex flex-col items-center justify-center'>
-                        <img src="/clean-design-icon-removebg-preview.png" alt="Creative Design" className="w-[80px] h-[80px]" />
-                        <p className="text-[#414141] text-[18px] font-semibold">Clean and Nice Design</p>
-                    </div>
-                    <div className='h-[150px] w-[300px] shadow-[0_20px_40px_#e0e0e0] flex justify-center items-center px-5'>
-                        <p className="text-[#414141] text-center">
-                            Simplicity meets sophistication. I deliver polished, efficient, and maintainable solutions.
-                        </p>
-                    </div>
-                  </div>
-                  <div>
-                    <div className='bg-[#e0e0e0] h-[150px] w-[300px] flex flex-col items-center justify-center'>
-                        <img src="/design-support-icon-removebg-preview.png" alt="Creative Design" className="w-[60px] h-[60px]" />
-                        <p className="text-[#414141] text-[18px] font-semibold">Support</p>
-                    </div>
-                    <div className='h-[150px] w-[300px] shadow-[0_20px_40px_#e0e0e0] flex justify-center items-center px-5'>
-                        <p className="text-[#414141] text-center">
-                            I've got your back beyond launch. Count on me for consistent support and continuous improvement.
-                        </p>
-                    </div>
-                  </div>
-              </div>
-            </div>
-            <div className='hidden lg:block'>
-              <div className='flex items-center justify-center pt-[100px] pb-[50px] gap-[20px] xl:gap-[40px]'>
-                <div className="relative w-[220px] xl:w-[250px] h-[150px] group">
-                  <div className="absolute inset-0 bg-[#e0e0e0] z-10 flex flex-col justify-center items-center transition-transform duration-700
-                  transform translate-y-0 group-hover:-translate-y-[100px]">
-                    <img src="/creative-design-icon-removebg-preview.png" alt="Creative Design" className="w-[80px] h-[80px]" />
-                    <p className="text-[#414141] text-[18px] font-semibold">Creative Design</p>
-                  </div>
-                  <div className="relative w-[220px] xl:w-[250px] h-[150px] flex justify-center items-center p-5 box-border transition-all duration-800 
-                  transform translate-y-0 opacity-0 group-hover:opacity-100 group-hover:translate-y-[50px] shadow-[0_20px_40px_#e0e0e0]">
-                    <div className="text-center">
-                      <p className="text-[#414141]">
-                        Innovation and Creativity are my forte. I bring fresh, inventive ideas to your project, making you stand out.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="relative w-[220px] xl:w-[250px] h-[150px] group">
-                  <div className="absolute inset-0 bg-[#e0e0e0] z-10 flex flex-col justify-center items-center transition-transform duration-700
-                  transform translate-y-0 group-hover:-translate-y-[100px]">
-                    <img src="/responsive-icon.png" alt="Creative Design" className="w-[60px] h-[60px]" />
-                    <p className="text-[#414141] text-[18px] font-semibold pt-4">Responsive Design</p>
-                  </div>
-                  <div className="relative w-[220px] xl:w-[250px] h-[150px] flex justify-center items-center p-5 box-border transition-all duration-800 
-                  transform translate-y-0 opacity-0 group-hover:opacity-100 group-hover:translate-y-[50px] shadow-[0_20px_40px_#e0e0e0]">
-                    <div className="text-center">
-                      <p className="text-[#414141]">
-                        Seamless across all devices. Your project will look and work flawlessly, no matter the screen size.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="relative w-[220px] xl:w-[250px] h-[150px] group">
-                  <div className="absolute inset-0 bg-[#e0e0e0] z-10 flex flex-col justify-center items-center transition-transform duration-700
-                  transform translate-y-0 group-hover:-translate-y-[100px]">
-                    <img src="/clean-design-icon-removebg-preview.png" alt="Creative Design" className="w-[80px] h-[80px]" />
-                    <p className="text-[#414141] text-[18px] font-semibold">Clean and Nice Design</p>
-                  </div>
-                  <div className="relative w-[220px] xl:w-[250px] h-[150px] flex justify-center items-center p-5 box-border transition-all duration-800 
-                  transform translate-y-0 opacity-0 group-hover:opacity-100 group-hover:translate-y-[50px] shadow-[0_20px_40px_#e0e0e0]">
-                    <div className="text-center">
-                      <p className="text-[#414141]">
-                        Simplicity meets sophistication. I deliver polished, efficient, and maintainable solutions.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="relative w-[220px] xl:w-[250px] h-[150px] group">
-                  <div className="absolute inset-0 bg-[#e0e0e0] z-10 flex flex-col justify-center items-center transition-transform duration-700
-                  transform translate-y-0 group-hover:-translate-y-[100px]">
-                    <img src="/design-support-icon-removebg-preview.png" alt="Creative Design" className="w-[60px] h-[60px]" />
-                    <p className="text-[#414141] text-[18px] font-semibold pt-4">Support</p>
-                  </div>
-                  <div className="relative w-[220px] xl:w-[250px] h-[150px] flex justify-center items-center p-5 box-border transition-all duration-800 
-                  transform translate-y-0 opacity-0 group-hover:opacity-100 group-hover:translate-y-[50px] shadow-[0_20px_40px_#e0e0e0]">
-                    <div className="text-center">
-                      <p className="text-[#414141]">
-                        I've got your back beyond launch. Count on me for consistent support and continuous improvement.
-                      </p>
-                    </div>
-                  </div>
                 </div>
               </div>
-            </div>
-            <div className='flex justify-center items-center'>
-              <a href="mailto:annabelowigho@gmail.com">
-                <div className="mt-10 w-[250px] flex items-center justify-center gap-4 border-2 border-[#181918] px-6 py-3 rounded-lg text-[20px]
-                font-semibold hover:bg-[#181918] hover:text-[#fefefe] hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out">
-                  <BsEnvelopeArrowUp />
-                  <button className="cursor-pointer">Contact Me</button>
+              <div className='hidden lg:block'>
+                <div className='flex items-center justify-center pt-[100px] pb-[50px] gap-[20px] xl:gap-[40px]'>
+                  <div className="relative w-[220px] xl:w-[250px] h-[150px] group">
+                    <div className="absolute inset-0 bg-[#e0e0e0] z-10 flex flex-col justify-center items-center transition-transform duration-700
+                    transform translate-y-0 group-hover:-translate-y-[100px]">
+                      <img src="/creative-design-icon-removebg-preview.png" alt="Creative Design" className="w-[80px] h-[80px]" />
+                      <p className="text-[#414141] text-[18px] font-semibold">Creative Design</p>
+                    </div>
+                    <div className="relative w-[220px] xl:w-[250px] h-[150px] flex justify-center items-center p-5 box-border transition-all duration-800 
+                    transform translate-y-0 opacity-0 group-hover:opacity-100 group-hover:translate-y-[50px] shadow-[0_20px_40px_#e0e0e0]">
+                      <div className="text-center">
+                        <p className="text-[#414141]">
+                          Innovation and Creativity are my forte. I bring fresh, inventive ideas to your project, making you stand out.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="relative w-[220px] xl:w-[250px] h-[150px] group">
+                    <div className="absolute inset-0 bg-[#e0e0e0] z-10 flex flex-col justify-center items-center transition-transform duration-700
+                    transform translate-y-0 group-hover:-translate-y-[100px]">
+                      <img src="/responsive-icon.png" alt="Creative Design" className="w-[60px] h-[60px]" />
+                      <p className="text-[#414141] text-[18px] font-semibold pt-4">Responsive Design</p>
+                    </div>
+                    <div className="relative w-[220px] xl:w-[250px] h-[150px] flex justify-center items-center p-5 box-border transition-all duration-800 
+                    transform translate-y-0 opacity-0 group-hover:opacity-100 group-hover:translate-y-[50px] shadow-[0_20px_40px_#e0e0e0]">
+                      <div className="text-center">
+                        <p className="text-[#414141]">
+                          Seamless across all devices. Your project will look and work flawlessly, no matter the screen size.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="relative w-[220px] xl:w-[250px] h-[150px] group">
+                    <div className="absolute inset-0 bg-[#e0e0e0] z-10 flex flex-col justify-center items-center transition-transform duration-700
+                    transform translate-y-0 group-hover:-translate-y-[100px]">
+                      <img src="/clean-design-icon-removebg-preview.png" alt="Creative Design" className="w-[80px] h-[80px]" />
+                      <p className="text-[#414141] text-[18px] font-semibold">Clean and Nice Design</p>
+                    </div>
+                    <div className="relative w-[220px] xl:w-[250px] h-[150px] flex justify-center items-center p-5 box-border transition-all duration-800 
+                    transform translate-y-0 opacity-0 group-hover:opacity-100 group-hover:translate-y-[50px] shadow-[0_20px_40px_#e0e0e0]">
+                      <div className="text-center">
+                        <p className="text-[#414141]">
+                          Simplicity meets sophistication. I deliver polished, efficient, and maintainable solutions.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="relative w-[220px] xl:w-[250px] h-[150px] group">
+                    <div className="absolute inset-0 bg-[#e0e0e0] z-10 flex flex-col justify-center items-center transition-transform duration-700
+                    transform translate-y-0 group-hover:-translate-y-[100px]">
+                      <img src="/design-support-icon-removebg-preview.png" alt="Creative Design" className="w-[60px] h-[60px]" />
+                      <p className="text-[#414141] text-[18px] font-semibold pt-4">Support</p>
+                    </div>
+                    <div className="relative w-[220px] xl:w-[250px] h-[150px] flex justify-center items-center p-5 box-border transition-all duration-800 
+                    transform translate-y-0 opacity-0 group-hover:opacity-100 group-hover:translate-y-[50px] shadow-[0_20px_40px_#e0e0e0]">
+                      <div className="text-center">
+                        <p className="text-[#414141]">
+                          I've got your back beyond launch. Count on me for consistent support and continuous improvement.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </a>
+              </div>
+              <div className='flex justify-center items-center'>
+                <a href="mailto:annabelowigho@gmail.com">
+                  <div className="mt-10 w-[250px] flex items-center justify-center gap-4 border-2 border-[#181918] px-6 py-3 rounded-lg text-[20px]
+                  font-semibold hover:bg-[#181918] hover:text-[#fefefe] hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out">
+                    <BsEnvelopeArrowUp />
+                    <button className="cursor-pointer">Contact Me</button>
+                  </div>
+                </a>
+              </div>
             </div>
-          </div>
+          </section>
       </div>
 
       {/* Skills Section */}
-      <div id='skills' className='py-[30px] md:py-[50px] lg:py-[80px] px-[20px] md:[35px] lg:px-[50px] xl:px-[100px]
-      flex items-center justify-center '>
-        <div className='grid grid-cols-3'>
-          <div className='flex flex-col items-center justify-center border-r-2 border-b-2 border-gray-300 
-          w-[120px] h-[100px] md:w-[180px] md:h-[160px] lg:w-[280px] lg:h-[257px]'>
-            <SiHtml5 className='text-[30px] md:text-[40px] lg:text-[60px]'/>
-            <p className='text-[20px] font-medium'>HTML</p>
-          </div>
-          <div className='flex flex-col items-center justify-center border-r-2 border-b-2 border-gray-300 
-          w-[120px] h-[100px] md:w-[180px] md:h-[160px] lg:w-[280px] lg:h-[257px]'>
-            <IoLogoCss3 className='text-[30px] md:text-[40px] lg:text-[60px]'/>
-            <p className='text-[20px] font-medium'>CSS</p>
-          </div>
-          <div className='flex flex-col items-center justify-center border-b-2 border-gray-300 
-          w-[120px] h-[100px] md:w-[180px] md:h-[160px] lg:w-[280px] lg:h-[257px]'>
-            <IoLogoJavascript className='text-[30px] md:text-[40px] lg:text-[60px]'/>
-            <p className='text-[20px] font-medium'>JavaScript</p>
-          </div>
-          <div className='flex flex-col items-center justify-center border-r-2 border-b-2 border-gray-300 
-          w-[120px] h-[100px] md:w-[180px] md:h-[160px] lg:w-[280px] lg:h-[257px]'>
-            <SiTypescript className='text-[30px] md:text-[40px] lg:text-[60px]'/>
-            <p className='text-[20px] font-medium'>TypeScript</p>
-          </div>
-          <div className='flex flex-col items-center justify-center border-r-2 border-b-2 border-gray-300 
-          w-[120px] h-[100px] md:w-[180px] md:h-[160px] lg:w-[280px] lg:h-[257px]'>
-            <SiTailwindcss className='text-[30px] md:text-[40px] lg:text-[60px]'/>
-            <p className='text-[20px] font-medium'>TailwindCSS</p>
-          </div>
-          <div className='flex flex-col items-center justify-center border-b-2 border-gray-300 
-          w-[120px] h-[100px] md:w-[180px] md:h-[160px] lg:w-[280px] lg:h-[257px]'>
-            <FaBootstrap className='text-[30px] md:text-[40px] lg:text-[60px]'/>
-            <p className='text-[20px] font-medium'>Bootstrap</p>
-          </div>
-          <div className='flex flex-col items-center justify-center border-r-2 border-gray-300
-          w-[120px] h-[100px] md:w-[180px] md:h-[160px] lg:w-[280px] lg:h-[257px]'>
-            <RiVuejsFill className='text-[30px] md:text-[40px] lg:text-[60px]'/>
-            <p className='text-[20px] font-medium'>Vue</p>
-          </div>
-          <div className='flex flex-col items-center justify-center border-r-2 border-gray-300
-          w-[120px] h-[100px] md:w-[180px] md:h-[160px] lg:w-[280px] lg:h-[257px]'>
-            <FaReact className='text-[30px] md:text-[40px] lg:text-[60px]'/>
-            <p className='text-[20px] font-medium'>React</p>
-          </div>
-          <div className='flex flex-col items-center justify-center
-          w-[120px] h-[100px] md:w-[180px] md:h-[160px] lg:w-[280px] lg:h-[257px]'>
-            <RiNextjsFill className='text-[30px] md:text-[40px] lg:text-[60px]'/>
-            <p className='text-[20px] font-medium'>Nextjs</p>
+      <section id='skills'>
+        <div className='py-[30px] md:py-[50px] lg:py-[80px] px-[20px] md:[35px] lg:px-[50px] xl:px-[100px]'>
+          <h3 className='text-center text-[28px] md:text-[45px] lg:text-[50px] font-semibold pb-10'>My Skills</h3>
+          <div  className='
+          flex items-center justify-center '>
+            <div className='grid grid-cols-3'>
+              <div className='flex flex-col items-center justify-center border-r-2 border-b-2 border-gray-300 
+              w-[120px] h-[100px] md:w-[180px] md:h-[160px] lg:w-[280px] lg:h-[257px]'>
+                <SiHtml5 className='text-[30px] md:text-[40px] lg:text-[60px]'/>
+                <p className='text-[20px] font-medium'>HTML</p>
+              </div>
+              <div className='flex flex-col items-center justify-center border-r-2 border-b-2 border-gray-300 
+              w-[120px] h-[100px] md:w-[180px] md:h-[160px] lg:w-[280px] lg:h-[257px]'>
+                <IoLogoCss3 className='text-[30px] md:text-[40px] lg:text-[60px]'/>
+                <p className='text-[20px] font-medium'>CSS</p>
+              </div>
+              <div className='flex flex-col items-center justify-center border-b-2 border-gray-300 
+              w-[120px] h-[100px] md:w-[180px] md:h-[160px] lg:w-[280px] lg:h-[257px]'>
+                <IoLogoJavascript className='text-[30px] md:text-[40px] lg:text-[60px]'/>
+                <p className='text-[20px] font-medium'>JavaScript</p>
+              </div>
+              <div className='flex flex-col items-center justify-center border-r-2 border-b-2 border-gray-300 
+              w-[120px] h-[100px] md:w-[180px] md:h-[160px] lg:w-[280px] lg:h-[257px]'>
+                <SiTypescript className='text-[30px] md:text-[40px] lg:text-[60px]'/>
+                <p className='text-[20px] font-medium'>TypeScript</p>
+              </div>
+              <div className='flex flex-col items-center justify-center border-r-2 border-b-2 border-gray-300 
+              w-[120px] h-[100px] md:w-[180px] md:h-[160px] lg:w-[280px] lg:h-[257px]'>
+                <SiTailwindcss className='text-[30px] md:text-[40px] lg:text-[60px]'/>
+                <p className='text-[20px] font-medium'>TailwindCSS</p>
+              </div>
+              <div className='flex flex-col items-center justify-center border-b-2 border-gray-300 
+              w-[120px] h-[100px] md:w-[180px] md:h-[160px] lg:w-[280px] lg:h-[257px]'>
+                <FaBootstrap className='text-[30px] md:text-[40px] lg:text-[60px]'/>
+                <p className='text-[20px] font-medium'>Bootstrap</p>
+              </div>
+              <div className='flex flex-col items-center justify-center border-r-2 border-gray-300
+              w-[120px] h-[100px] md:w-[180px] md:h-[160px] lg:w-[280px] lg:h-[257px]'>
+                <RiVuejsFill className='text-[30px] md:text-[40px] lg:text-[60px]'/>
+                <p className='text-[20px] font-medium'>Vue</p>
+              </div>
+              <div className='flex flex-col items-center justify-center border-r-2 border-gray-300
+              w-[120px] h-[100px] md:w-[180px] md:h-[160px] lg:w-[280px] lg:h-[257px]'>
+                <FaReact className='text-[30px] md:text-[40px] lg:text-[60px]'/>
+                <p className='text-[20px] font-medium'>React</p>
+              </div>
+              <div className='flex flex-col items-center justify-center
+              w-[120px] h-[100px] md:w-[180px] md:h-[160px] lg:w-[280px] lg:h-[257px]'>
+                <RiNextjsFill className='text-[30px] md:text-[40px] lg:text-[60px]'/>
+                <p className='text-[20px] font-medium'>Nextjs</p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+        
+      </section>
 
       {/* Projects Section */}
-      <div id='projects' className='bg-[#f0f1f0] py-[50px] px-[30px] xl:px-[150px]'>
-          <h3 className='text-center text-[28px] md:text-[45px] lg:text-[50px] font-semibold'>My Projects</h3>
-          <p className='text-center text-[18px] md:text-[24px] pb-5 md:pb-10 xl:pb-14'>
-            Some Things I've Built - A Collection of Projects Showcasing My Frontend Skills and Creative Approach to Problem Solving
-          </p>
-          <div className='space-y-10 md:space-y-20'>
-            <div className='flex flex-col md:flex-row justify-center gap-[20px] md:gap-[40px] lg:gap-[100px]'>
-              <div className='w-full md:w-3/8'>
-                <h3 className='text-[30px] md:text-[30px] font-semibold pb-3'>Electra Motors</h3>
-                <p className='text-[16px] lg:text-[20px] text-justify pb-4'>
-                  I was the sole frontend developer for this project - a clean, responsive website built to represent Electra Motors, 
-                  the first CNG conversion center in Delta State, Nigeria. The site highlights their innovative services and provides key 
-                  information for customers transitioning to cleaner energy.
-                </p>
-                <a 
-                  href="https://electramotors.ng" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className='inline-flex items-center gap-2 text-[18px] text-[#1f1f1f] hover:underline transition duration-500'
-                >
-                  <button className='cursor-pointer text-[18px]'>Visit website </button>
-                  <FaExternalLinkAlt className='text-[16px] cursor-pointer'/>
-                </a>
-              </div>
-              <Link
-                to="https://electramotors.ng"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative w-full md:w-[400px] h-[500px] overflow-hidden rounded-lg shadow-md block"
-                >
-                <img
-                  src="/electra-img.jpeg"
-                  alt="Electra Motors preview"
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-[#c1bdd5]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="absolute inset-0 bg-[#c1bdd5]/70 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center text-center p-4">
-                  <p className="text-[24px] text-gray-800 font-semibold">
-                    Electra Motors
-                    <br />
-                    <span className="text-[18px] font-normal"> 
-                      <span className='font-semibold'>Technology:</span> JavaScript, React, TailwindCSS
-                    </span>
+      <section id='projects'>
+        <div className='bg-[#f0f1f0] py-[50px] px-[30px] xl:px-[150px]'>
+            <h3 className='text-center text-[28px] md:text-[45px] lg:text-[50px] font-semibold'>My Projects</h3>
+            <p className='text-center text-[18px] md:text-[24px] pb-5 md:pb-10 xl:pb-14'>
+              Some Things I've Built 
+            </p>
+            <div className='space-y-10 md:space-y-20'>
+              <div className='flex flex-col md:flex-row justify-center gap-[20px] md:gap-[40px] lg:gap-[100px]'>
+                <div className='w-full md:w-3/8'>
+                  <h3 className='text-[30px] md:text-[30px] font-semibold pb-3'>Electra Motors</h3>
+                  <p className='text-[16px] lg:text-[20px] text-justify pb-4'>
+                    I was the sole frontend developer for this project - a clean, responsive website built to represent Electra Motors, 
+                    the first CNG conversion center in Delta State, Nigeria. The site highlights their innovative services and provides key 
+                    information for customers transitioning to cleaner energy.
                   </p>
+                  <a 
+                    href="https://electramotors.ng" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className='inline-flex items-center gap-2 text-[18px] text-[#1f1f1f] hover:underline transition duration-500'
+                  >
+                    <button className='cursor-pointer text-[18px]'>Visit website </button>
+                    <FaExternalLinkAlt className='text-[16px] cursor-pointer'/>
+                  </a>
                 </div>
-              </Link>
-            </div>
-            <div className='flex flex-col md:flex-row-reverse justify-center gap-[20px] md:gap-[40px] lg:gap-[100px]'>
-              <div className='w-full md:w-3/8'>
-                <h3 className='text-[30px] md:text-[30px] font-semibold pb-3'>Delta State ICT-YEP</h3>
-                <p className='text-[16px] lg:text-[20px] text-justify pb-4'>
-                  I contributed to building the official platform for Delta State's ICT-YEP — a government initiative aimed at empowering 
-                  youths with tech skills. The platform includes a registration page and a full-featured online learning system, complete 
-                  with student and tutor dashboards for course access and management.
-                </p>
-                <a 
-                  href="https://deltastateictyep.com/" 
-                  target="_blank" 
+                <Link
+                  to="https://electramotors.ng"
+                  target="_blank"
                   rel="noopener noreferrer"
-                  className='inline-flex items-center gap-2 text-[18px] text-[#1f1f1f] hover:underline transition duration-500'
-                >
-                  <button className='cursor-pointer text-[18px]'>Visit website </button>
-                  <FaExternalLinkAlt className='text-[16px] cursor-pointer'/>
-                </a>
+                  className="group relative w-full md:w-[400px] h-[500px] overflow-hidden rounded-lg shadow-md block"
+                  >
+                  <img
+                    src="/electra-img.jpeg"
+                    alt="Electra Motors preview"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-[#c1bdd5]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute inset-0 bg-[#c1bdd5]/70 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center text-center p-4">
+                    <p className="text-[24px] text-gray-800 font-semibold">
+                      Electra Motors
+                      <br />
+                      <span className="text-[18px] font-normal"> 
+                        <span className='font-semibold'>Technology:</span> JavaScript, React, TailwindCSS
+                      </span>
+                    </p>
+                  </div>
+                </Link>
               </div>
-              <Link
-                to="https://deltastateictyep.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative w-full md:w-[400px] h-[500px] overflow-hidden rounded-lg shadow-md block"
-                >
-                <img
-                  src="/ict-yep.jpeg"
-                  alt="Delta State ICT-YEP preview"
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-[#c1bdd5]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="absolute inset-0 bg-[#c1bdd5]/70 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center text-center p-4">
-                  <p className="text-[24px] text-gray-800 font-semibold">
-                    Delta State ICT-YEP
-                    <br />
-                    <span className="text-[18px] font-normal"> 
-                      <span className='font-semibold'>Technology:</span> HTML, TailwindCSS, JavaScript
-                    </span>
+              <div className='flex flex-col md:flex-row-reverse justify-center gap-[20px] md:gap-[40px] lg:gap-[100px]'>
+                <div className='w-full md:w-3/8'>
+                  <h3 className='text-[30px] md:text-[30px] font-semibold pb-3'>Delta State ICT-YEP</h3>
+                  <p className='text-[16px] lg:text-[20px] text-justify pb-4'>
+                    I contributed to building the official platform for Delta State's ICT-YEP — a government initiative aimed at empowering 
+                    youths with tech skills. The platform includes a registration page and a full-featured online learning system, complete 
+                    with student and tutor dashboards for course access and management.
                   </p>
+                  <a 
+                    href="https://deltastateictyep.com/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className='inline-flex items-center gap-2 text-[18px] text-[#1f1f1f] hover:underline transition duration-500'
+                  >
+                    <button className='cursor-pointer text-[18px]'>Visit website </button>
+                    <FaExternalLinkAlt className='text-[16px] cursor-pointer'/>
+                  </a>
                 </div>
-              </Link>
-            </div>
-            <div className='flex flex-col md:flex-row justify-center gap-[20px] md:gap-[40px] lg:gap-[100px]'>
-              <div className='w-full md:w-3/8'>
-                <h3 className='text-[30px] md:text-[30px] font-semibold pb-3'>Movies</h3>
-                <p className='text-[16px] lg:text-[20px] text-justify pb-4'>
-                  A simple movie browsing app built while learning React. It uses the TMDB API to fetch real-time movie data, 
-                  allowing users to explore trending films with clean visuals and responsive design. This project helped me understand 
-                  API integration, dynamic routing, and component structuring in React.
-                </p>
-                <a 
-                  href="https://my-movie-tau.vercel.app/" 
-                  target="_blank" 
+                <Link
+                  to="https://deltastateictyep.com/"
+                  target="_blank"
                   rel="noopener noreferrer"
-                  className='inline-flex items-center gap-2 text-[18px] text-[#1f1f1f] hover:underline transition duration-500'
-                >
-                  <button className='cursor-pointer text-[18px]'>Visit website </button>
-                  <FaExternalLinkAlt className='text-[16px] cursor-pointer'/>
-                </a>
+                  className="group relative w-full md:w-[400px] h-[500px] overflow-hidden rounded-lg shadow-md block"
+                  >
+                  <img
+                    src="/ict-yep.jpeg"
+                    alt="Delta State ICT-YEP preview"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-[#c1bdd5]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute inset-0 bg-[#c1bdd5]/70 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center text-center p-4">
+                    <p className="text-[24px] text-gray-800 font-semibold">
+                      Delta State ICT-YEP
+                      <br />
+                      <span className="text-[18px] font-normal"> 
+                        <span className='font-semibold'>Technology:</span> HTML, TailwindCSS, JavaScript
+                      </span>
+                    </p>
+                  </div>
+                </Link>
               </div>
-              <Link
-                to="https://my-movie-tau.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative w-full md:w-[400px] h-[500px] overflow-hidden rounded-lg shadow-md block"
-                >
-                <img
-                  src="/movies.png"
-                  alt="Movies preview"
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-[#c1bdd5]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="absolute inset-0 bg-[#c1bdd5]/70 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center text-center p-4">
-                  <p className="text-[24px] text-gray-800 font-semibold">
-                    Movies
-                    <br />
-                    <span className="text-[18px] font-normal"> 
-                      <span className='font-semibold'>Technology:</span> JavaScript, React, TailwindCSS
-                    </span>
+              <div className='flex flex-col md:flex-row justify-center gap-[20px] md:gap-[40px] lg:gap-[100px]'>
+                <div className='w-full md:w-3/8'>
+                  <h3 className='text-[30px] md:text-[30px] font-semibold pb-3'>Movies</h3>
+                  <p className='text-[16px] lg:text-[20px] text-justify pb-4'>
+                    A simple movie browsing app built while learning React. It uses the TMDB API to fetch real-time movie data, 
+                    allowing users to explore trending films with clean visuals and responsive design. This project helped me understand 
+                    API integration, dynamic routing, and component structuring in React.
                   </p>
+                  <a 
+                    href="https://my-movie-tau.vercel.app/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className='inline-flex items-center gap-2 text-[18px] text-[#1f1f1f] hover:underline transition duration-500'
+                  >
+                    <button className='cursor-pointer text-[18px]'>Visit website </button>
+                    <FaExternalLinkAlt className='text-[16px] cursor-pointer'/>
+                  </a>
                 </div>
-              </Link>
+                <Link
+                  to="https://my-movie-tau.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative w-full md:w-[400px] h-[500px] overflow-hidden rounded-lg shadow-md block"
+                  >
+                  <img
+                    src="/movies.png"
+                    alt="Movies preview"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-[#c1bdd5]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute inset-0 bg-[#c1bdd5]/70 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center text-center p-4">
+                    <p className="text-[24px] text-gray-800 font-semibold">
+                      Movies
+                      <br />
+                      <span className="text-[18px] font-normal"> 
+                        <span className='font-semibold'>Technology:</span> JavaScript, React, TailwindCSS
+                      </span>
+                    </p>
+                  </div>
+                </Link>
+              </div>
             </div>
-          </div>
-      </div>
+        </div>
+      </section>
 
       <div className='bg-[#181918] py-5 '>
         <p className='text-center text-white text-[16px]'>© 2025 Annabel - All Rights Reserved</p>
