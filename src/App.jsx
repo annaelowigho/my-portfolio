@@ -30,7 +30,9 @@ function App() {
       <div className='bg-[#181918] px-[20px]  md:px-[40px] py-[30px] min-h-screen'>
         <nav className='fixed top-0 left-0 w-full z-50 flex items-center justify-between px-[20px] md:px-[40px] 
         py-[20px] border-b border-[#333] backdrop-blur-sm bg-[#181918]'>
-          <img src="/logo3.png" alt="" className='w-[50px] h-[50px]' />
+          <NavHashLink smooth to='#hero'>
+            <img src="/logo3.png" alt="" className='w-[50px] h-[50px]' />
+          </NavHashLink>
           <div className='md:flex text-[#fefefe] gap-10 lg:gap-20 hidden text-[20px]'>
             <ul className='flex items-center gap-10'>
               <NavHashLink smooth to='#about'>
@@ -95,15 +97,16 @@ function App() {
 
         {/* Hero Section */}
         <div onClick={() => setIsMenuOpen(false)} 
+        id='hero'
         className='pt-24 md:pt-40 lg:pt-34 px-[20px] lg:px-[20px] xl:px-[50px] flex flex-col lg:flex-row items-center justify-center gap-10 md:gap-20
         lg:gap-5 xl:gap-20'>
             <div className='text-[#e0e0e0]'>
               <h1 className='text-[60px] lg:text-[40px] xl:text-[60px] text-center lg:text-start leading-16 lg:leading-12 xl:leading-16'>
                 Owigho Ufuoma Annabel
               </h1>
-              <p className='text-[30px]  text-center lg:text-start pt-3'>Frontend Engineer</p>
+              <p className='text-[30px]  text-center lg:text-start pt-3'>Frontend Developer</p>
               <p className='text-center lg:text-start pt-5'>
-                Frontend Engineer passionate about building great web experiences.
+                Frontend Developer passionate about building great web experiences.
               </p>
             </div>
             <div className='w-full md:w-[480px] h-[310px] md:h-[480px] bg-[#2c2d2c] rounded-full flex items-center 
@@ -123,23 +126,15 @@ function App() {
               <h2 className='text-center md:text-start text-[40px] lg:text-[50px] font-semibold'>About me</h2>
                 <div className='text-justify space-y-4'>
                   <p className=''>
-                    Greetings, I'm Owigho Ufuoma Annabel, a dedicated Frontend Developer from Delta State, Nigeria. My academic journey 
-                    unfolded in the realm of Computer Science, serving as a canvas for my journey into the dynamic realm of web development 
-                    and establishing a robust foundation for me in technology.
+                    I'm Owigho Ufuoma Annabel, a Frontend Developer with a Computer Science background and a passion for building responsive, 
+                    user-friendly web applications. Skilled in React, Next.js, JavaScript, TypeScript, and Tailwind CSS, I focus on creating 
+                    accessible, high-performance interfaces that enhance user experiences.
                   </p>
                   <p className=''>
-                    I wield proficiency in HTML, CSS, Tailwind, JavaScript, and React. Despite having under a year of hands-on experience, 
-                    my dedication to the craft is unwavering. Web development is not just a job for me; it's s a genuine passion. I find joy 
-                    in the challenges it presents and the opportunity to continually expand my problem-solving and analytical skills. 
-                    The ever-evolving nature of the tech industry fuels my enthusiasm to learn and adapt.
-                  </p>
-                  <p>
-                    My mission is to contribute to the digital landscape by crafting web interfaces that are not only intuitive and visually 
-                    appealing but also resonate with people. I believe in the transformative power of technology to bring ideas to life, 
-                    and I'm committed to delivering solutions that not only meet but exceed expectations. Each project is a chance for both 
-                    professional and personal growth, and I navigate this exciting journey in web development with a deep commitment to continuous 
-                    learning and improvement. Beyond code, I'm a relentless explorer of design trends and a connoisseur of user experiences. 
-                    Let's collaborate and turn your visionary ideas into awe-inspiring realities.
+                    At Schoolville Limited and Vechy Graphix, I've contributed to various projects like the Electra Motors website and the Delta State 
+                    ICT Youth Empowerment Programme website, designing dynamic UI components and optimizing performance. I enjoy collaborating 
+                    with teams, staying current with frontend trends, and mentoring aspiring developers. Let's work together to create 
+                    innovative, impactful web solutions!
                   </p>
                 </div>
               </div>
@@ -174,7 +169,7 @@ function App() {
           <section id='services'>
             <div className=' py-[50px] '>
               <h3 className='text-center text-[30px] md:text-[45px] lg:text-[50px] font-semibold pb-2'>My Services</h3>
-              <p className='text-center text-[18px] md:text-[24px] pb-5'>
+              <p className='text-center text-[18px] md:text-[24px] pb-5 px-3 md:px-8'>
                 I offer design-focused frontend development tailored to your business needs.
               </p>
               <div className='lg:hidden'>
