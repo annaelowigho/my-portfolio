@@ -15,6 +15,8 @@ import { SiTypescript, SiTailwindcss  } from "react-icons/si";
 import { RiVuejsFill, RiNextjsFill } from "react-icons/ri";
 import { FaBootstrap } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { AiOutlineJavaScript } from "react-icons/ai";
+
 
 
 
@@ -109,9 +111,52 @@ function App() {
                 Frontend Developer passionate about building great web experiences.
               </p>
             </div>
-            <div className='w-full md:w-[480px] h-[310px] md:h-[480px] bg-[#2c2d2c] rounded-full flex items-center 
-            justify-center overflow-hidden shadow-lg border-[6px] border-[#1f1f1f]'>
-              <img src="/anna.png" alt="Annabel" className="pt-4"/>
+            {/* <div className="relative w-[480px] h-[480px] flex items-center justify-center">
+              <div className="w-full md:w-[480px] h-[310px] md:h-[480px] bg-[#2c2d2c] rounded-full flex items-center 
+              justify-center overflow-hidden shadow-lg border-[6px] border-[#1f1f1f]">
+                <img src="/anna.png" alt="Annabel" className="pt-4" />
+              </div>
+
+              <div className="animate-orbit">
+                <div
+                  className="absolute bg-[#1f1f1f]/60 w-[80px] h-[80px] rounded-full flex items-center justify-center"
+                  style={{ transform: 'translate(200px, 0)' }} 
+                >
+                  <FaReact className="text-[60px] text-[#00d1f7]" />
+                </div>
+              </div>
+              <div className="animate-orbit" style={{ animationDelay: '-1.33s' }}>
+                <div
+                  className="absolute bg-[#1f1f1f]/60 w-[80px] h-[80px] rounded-full flex items-center justify-center"
+                  style={{ transform: 'translate(200px, 0)' }}
+                >
+                  <AiOutlineJavaScript className="text-[40px] text-white" />
+                </div>
+              </div>
+              <div className="animate-orbit" style={{ animationDelay: '-2.66s' }}>
+                <div
+                  className="absolute bg-[#1f1f1f]/60 w-[80px] h-[80px] rounded-full flex items-center justify-center"
+                  style={{ transform: 'translate(200px, 0)' }}
+                >
+                  <SiTailwindcss className="text-[40px] text-[#00bcff]" />
+                </div>
+              </div>
+            </div> */}
+            <div className='relative'>
+              <div className='w-full md:w-[480px] h-[310px] md:h-[480px] bg-[#2c2d2c] rounded-full flex items-center 
+              justify-center overflow-hidden shadow-lg border-[6px] border-[#1f1f1f]'>
+                <img src="/anna.png" alt="Annabel" className="pt-4"/>
+              </div>
+              <div className='animate-orbit absolute bg-[#1f1f1f]/60 w-[80px] h-[80px] rounded-full flex items-center justify-center top-[60px]'>
+                <FaReact className='text-[60px] text-[#00d1f7]'/>
+              </div>
+              <div className='animate-orbit absolute bg-[#1f1f1f]/60 w-[80px] h-[80px] rounded-full flex items-center justify-center bottom-[40px] right-[20px]'>
+                <AiOutlineJavaScript className='text-[40px] text-white'/>
+              </div>
+              <div className='animate-orbit absolute bg-[#1f1f1f]/60 w-[80px] h-[80px] rounded-full flex items-center justify-center right-[60px] top-[10px]'>
+                <SiTailwindcss className='text-[40px] text-[#00bcff]'/>
+              </div>
+              
             </div>
 
         </div>
@@ -152,7 +197,7 @@ function App() {
                 </div>
                 <div className='bg-[#e0e0e0] px-1 py-1 -skew-x-8'>
                   <div className='bg-[#181918] px-10 py-10 text-center'>
-                    <a href="https://drive.google.com/file/d/1NpFj0QIw9AZJERx2pNJhkWVNOM0bgoJY/view?usp=drive_link">
+                    <a href="https://drive.google.com/file/d/1oTC9Yyvp84oZoKFztjgOKhzHPKmG3kkl/view?usp=drive_link">
                       <button className="relative text-[#e0e0e0] font-semibold text-[20px] md:text-[22px] cursor-pointer after:content-[''] after:absolute 
                       after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-[#e0e0e0] after:scale-x-0 after:origin-right 
                       after:transition-transform after:duration-500 hover:after:scale-x-100 hover:after:origin-left">
