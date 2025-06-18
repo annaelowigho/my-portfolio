@@ -29,7 +29,7 @@ function App() {
 
   return (
     <>
-      <div className='bg-[#181918] px-[20px]  md:px-[40px] py-[30px] min-h-screen'>
+      <div className='bg-[#181918] px-[20px]  md:px-[40px] py-[30px] min-h-[100vh] nav-bg'>
         <nav className='fixed top-0 left-0 w-full z-50 flex items-center justify-between px-[20px] md:px-[40px] 
         py-[20px] border-b border-[#333] backdrop-blur-sm bg-[#181918]'>
           <NavHashLink smooth to='#hero'>
@@ -54,7 +54,7 @@ function App() {
               <div className='flex border-2 border-[#fefefe] items-center justify-center px-6 py-2 gap-4 rounded-lg
               hover:bg-[#fefefe] hover:text-[#181918] hover:scale-105 hover:shadow-xl transition-all duration-500 ease-in-out'>
                 <BsEnvelopeArrowUp />
-                <button className='cursor-pointer'>Contact me</button>
+                <button className='cursor-pointer'>Contact Me</button>
               </div>
             </a>
           </div>
@@ -96,69 +96,102 @@ function App() {
             )}
           </div>
         </nav>
+        
+
+        {/* <div className="relative w-[480px] h-[480px] flex items-center justify-center">
+          <div className="w-full md:w-[480px] h-[310px] md:h-[480px] bg-[#2c2d2c] rounded-full flex items-center 
+          justify-center overflow-hidden shadow-lg border-[6px] border-[#1f1f1f]">
+            <img src="/anna.png" alt="Annabel" className="pt-4" />
+          </div>
+          <div className="animate-orbit">
+            <div className="absolute bg-[#1f1f1f]/60 w-[80px] h-[80px] rounded-full flex items-center justify-center"
+            style={{ transform: 'translate(200px, 0)' }}>
+              <FaReact className="text-[60px] text-[#00d1f7]" />
+            </div>
+          </div>
+          <div className="animate-orbit" style={{ animationDelay: '-1.33s' }}>
+            <div className="absolute bg-[#1f1f1f]/60 w-[80px] h-[80px] rounded-full flex items-center justify-center"
+              style={{ transform: 'translate(200px, 0)' }}>
+                <AiOutlineJavaScript className="text-[40px] text-white" />
+            </div>
+          </div>
+          <div className="animate-orbit" style={{ animationDelay: '-2.66s' }}>
+            <div className="absolute bg-[#1f1f1f]/60 w-[80px] h-[80px] rounded-full flex items-center justify-center"
+            style={{ transform: 'translate(200px, 0)' }}>
+              <SiTailwindcss className="text-[40px] text-[#00bcff]" />
+            </div>
+          </div>
+        </div> */}
+
 
         {/* Hero Section */}
-        <div onClick={() => setIsMenuOpen(false)} 
-        id='hero'
-        className='pt-24 md:pt-40 lg:pt-34 px-[20px] lg:px-[20px] xl:px-[50px] flex flex-col lg:flex-row items-center justify-center gap-10 md:gap-20
-        lg:gap-5 xl:gap-20'>
-            <div className='text-[#e0e0e0]'>
-              <h1 className='text-[60px] lg:text-[40px] xl:text-[60px] text-center lg:text-start leading-16 lg:leading-12 xl:leading-16'>
-                Owigho Ufuoma Annabel
-              </h1>
-              <p className='text-[30px]  text-center lg:text-start pt-3'>Frontend Developer</p>
-              <p className='text-center lg:text-start pt-5'>
-                Frontend Developer passionate about building great web experiences.
-              </p>
+        <div id="hero"
+        className="pt-[130px] md:pt-40 lg:pt-34 px-[20px] lg:px-[50px] flex flex-col lg:flex-row items-center justify-between gap-16 
+        md:gap-34 lg:gap-8 xl:gap-20"
+        onClick={() => setIsMenuOpen(false)}
+        role="region"
+        aria-label="Hero section">
+          <div className="text-[#e0e0e0] animate-fade-in">
+            <h1 className="text-[40px] lg:text-[40px] xl:text-[60px] font-bold text-center lg:text-left leading-tight">
+              Owigho Ufuoma Annabel
+            </h1>
+            <p className="text-[30px] md:text-[40px] lg:text-[30px] text-center lg:text-left pt-3 font-semibold text-[#00bcff]">
+              Frontend Developer
+            </p>
+            <p className="text-lg text-center lg:text-left pt-5 leading-relaxed">
+              Crafting pixel-perfect, user-friendly web experiences with React, Tailwind, and JavaScript.
+            </p>
+            <div className="flex justify-center lg:justify-start gap-4 pt-8">
+              <a href="#projects"
+              className="px-4 md:px-6 py-3 bg-[#00bcff] text-[#1a1a1a] font-semibold rounded-full hover:bg-[#00d1f7] hover:scale-105 
+              transition-transform duration-300 hero-view">
+                View My Work
+              </a>
+              <a href=""
+              className="px-4 md:px-6 py-3 border border-[#00bcff] text-[#00bcff] font-semibold rounded-full hover:bg-[#00bcff]/10 
+              transition-colors duration-300">
+                Contact Me
+              </a>
             </div>
-            {/* <div className="relative w-[480px] h-[480px] flex items-center justify-center">
-              <div className="w-full md:w-[480px] h-[310px] md:h-[480px] bg-[#2c2d2c] rounded-full flex items-center 
-              justify-center overflow-hidden shadow-lg border-[6px] border-[#1f1f1f]">
-                <img src="/anna.png" alt="Annabel" className="pt-4" />
-              </div>
-
-              <div className="animate-orbit">
-                <div
-                  className="absolute bg-[#1f1f1f]/60 w-[80px] h-[80px] rounded-full flex items-center justify-center"
-                  style={{ transform: 'translate(200px, 0)' }} 
-                >
-                  <FaReact className="text-[60px] text-[#00d1f7]" />
-                </div>
-              </div>
-              <div className="animate-orbit" style={{ animationDelay: '-1.33s' }}>
-                <div
-                  className="absolute bg-[#1f1f1f]/60 w-[80px] h-[80px] rounded-full flex items-center justify-center"
-                  style={{ transform: 'translate(200px, 0)' }}
-                >
-                  <AiOutlineJavaScript className="text-[40px] text-white" />
-                </div>
-              </div>
-              <div className="animate-orbit" style={{ animationDelay: '-2.66s' }}>
-                <div
-                  className="absolute bg-[#1f1f1f]/60 w-[80px] h-[80px] rounded-full flex items-center justify-center"
-                  style={{ transform: 'translate(200px, 0)' }}
-                >
-                  <SiTailwindcss className="text-[40px] text-[#00bcff]" />
-                </div>
-              </div>
-            </div> */}
-            <div className='relative'>
-              <div className='w-full md:w-[480px] h-[310px] md:h-[480px] bg-[#2c2d2c] rounded-full flex items-center 
-              justify-center overflow-hidden shadow-lg border-[6px] border-[#1f1f1f]'>
-                <img src="/anna.png" alt="Annabel" className="pt-4"/>
-              </div>
-              <div className='animate-orbit absolute bg-[#1f1f1f]/60 w-[80px] h-[80px] rounded-full flex items-center justify-center top-[60px]'>
-                <FaReact className='text-[60px] text-[#00d1f7]'/>
-              </div>
-              <div className='animate-orbit absolute bg-[#1f1f1f]/60 w-[80px] h-[80px] rounded-full flex items-center justify-center bottom-[40px] right-[20px]'>
-                <AiOutlineJavaScript className='text-[40px] text-white'/>
-              </div>
-              <div className='animate-orbit absolute bg-[#1f1f1f]/60 w-[80px] h-[80px] rounded-full flex items-center justify-center right-[60px] top-[10px]'>
-                <SiTailwindcss className='text-[40px] text-[#00bcff]'/>
-              </div>
-              
+          </div>
+            
+          <div className="relative animate-slide-in">
+            <div className="w-[310px] md:w-[480px] h-[310px] md:h-[480px] bg-[#2c2d2c] rounded-full flex items-center justify-center 
+            overflow-hidden shadow-2xl border-[6px] border-[#1f1f1f]">
+              <img src="/anna.png" alt="Portrait of Annabel, Frontend Developer" className="scale-110 translate-y-4"/>
             </div>
-
+            {/* Orbiting Icons with Tooltips */}
+            <div className="animate-orbit group absolute bg-[#1f1f1f]/60 w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center 
+            justify-center top-10 left-0 md:top-10 md:left-8 hover:scale-110 hover:bg-[#1f1f1f]/80 transition-transform duration-300">
+              <FaReact className="text-4xl md:text-5xl text-[#00d1f7]" />
+              <span className="absolute hidden group-hover:block bg-[#1f1f1f] text-white text-sm px-2 py-1 rounded top-[-30px] 
+              whitespace-nowrap">
+                React
+              </span>
+            </div>
+            <div className="animate-orbit group absolute bg-[#1f1f1f]/60 w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center 
+            justify-center bottom-8 right-0 md:right-30 md:-bottom-5 hover:scale-110 hover:bg-[#1f1f1f]/80 transition-transform duration-300">
+              <AiOutlineJavaScript className="text-3xl md:text-4xl text-[#f7df1e]" />
+              <span className="absolute hidden group-hover:block bg-[#1f1f1f] text-white text-sm px-2 py-1 rounded bottom-[-30px] 
+              whitespace-nowrap">
+                JavaScript
+              </span>
+            </div>
+            <div className="animate-orbit group absolute bg-[#1f1f1f]/60 w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center 
+            justify-center right-5 md:right-12 top-4 md:top-6 hover:scale-110 hover:bg-[#1f1f1f]/80 transition-transform duration-300">
+              <SiTailwindcss className="text-3xl md:text-4xl text-[#00bcff]" />
+              <span className="absolute hidden group-hover:block bg-[#1f1f1f] text-white text-sm px-2 py-1 rounded top-[-30px] 
+              whitespace-nowrap">
+                Tailwind CSS
+              </span>
+            </div>
+          </div>
+          {/* <div className="absolute bottom-8 flex flex-col items-center animate-bounce">
+            <span className="text-[#e0e0e0] text-sm">Scroll Down</span>
+            <svg className="w-6 h-6 text-[#00bcff] mt-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+          </div> */}
         </div>
       </div>
 

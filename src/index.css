@@ -11,6 +11,9 @@ body{
 section{
   scroll-margin-top: 80px;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 @keyframes orbit {
   0% {
@@ -23,4 +26,49 @@ section{
 
 .animate-orbit {
   animation: orbit 10s linear infinite;
+}
+
+/* Fade-in for text */
+@keyframes fade-in {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fade-in 5s ease-out forwards;
+}
+
+/* Glow effect for image border */
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 10px rgba(0, 188, 255, 0.5); }
+  50% { box-shadow: 0 0 20px rgba(0, 209, 247, 0.8); }
+}
+.animate-glow {
+  animation: glow 3s ease-in-out infinite;
+}
+
+/* Slide-in for image */
+@keyframes slide-in {
+  0% { opacity: 0; transform: translateX(50px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+.animate-slide-in {
+  animation: slide-in 1s ease-out forwards;
+}
+
+@media (min-width: 1300px) {
+  #hero {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (min-width: 1700px) {
+  #hero {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  .nav-bg{
+    height: 70vh;
+    min-height: 0;
+  }
 }
