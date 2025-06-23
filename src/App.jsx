@@ -471,10 +471,10 @@ function App() {
                   <img
                     src="/electra-img.jpeg"
                     alt="Electra Motors preview"
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-[#c1bdd5]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <div className="absolute inset-0 bg-[#c1bdd5]/70 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center text-center p-4">
+                  <div className="absolute inset-0 bg-[#c1bdd5]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute inset-0 bg-[#c1bdd5]/70 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center text-center p-4">
                     <p className="text-[24px] text-gray-800 font-semibold">
                       Electra Motors
                       <br />
@@ -486,6 +486,48 @@ function App() {
                 </Link>
               </div>
               <div className='flex flex-col md:flex-row-reverse justify-center gap-[20px] md:gap-[40px] lg:gap-[100px]'>
+                <div className='w-full md:w-3/8'>
+                  <h3 className='text-[30px] md:text-[30px] font-semibold pb-3'>Delta State Auditor General (PCMS)</h3>
+                  <p className='text-[16px] lg:text-[20px] text-justify pb-4'>
+                    I contributed to the development of the official platform for the Delta State Auditor General’s Personnel & Certificate 
+                    Management System (PCMS) — an institutional platform mandated to promote accountability, transparency, and integrity in 
+                    the financial management of public funds across all Ministries, Departments, and Agencies (MDAs) of the Delta State 
+                    Government.
+                  </p>
+                  <a 
+                    href="https://www.dsgauditoffice.com/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className='inline-flex items-center gap-2 text-[18px] text-[#1f1f1f] hover:underline transition duration-500'
+                  >
+                    <button className='cursor-pointer text-[18px]'>Visit website </button>
+                    <FaExternalLinkAlt className='text-[16px] cursor-pointer'/>
+                  </a>
+                </div>
+                <Link
+                  to="https://www.dsgauditoffice.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative w-full md:w-[400px] h-[500px] overflow-hidden rounded-lg shadow-md block"
+                  >
+                  <img
+                    src="/auditor-general.jpeg"
+                    alt="Delta State ICT-YEP preview"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-[#c1bdd5]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute inset-0 bg-[#c1bdd5]/70 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center text-center p-4">
+                    <p className="text-[24px] text-gray-800 font-semibold">
+                      Delta State Auditor General (PCMS)
+                      <br />
+                      <span className="text-[18px] font-normal"> 
+                        <span className='font-semibold'>Technology:</span> Vuejs, Tailwind CSS, JavaScript
+                      </span>
+                    </p>
+                  </div>
+                </Link>
+              </div>
+              <div className='flex flex-col md:flex-row justify-center gap-[20px] md:gap-[40px] lg:gap-[100px]'>
                 <div className='w-full md:w-3/8'>
                   <h3 className='text-[30px] md:text-[30px] font-semibold pb-3'>Delta State ICT-YEP</h3>
                   <p className='text-[16px] lg:text-[20px] text-justify pb-4'>
@@ -512,10 +554,11 @@ function App() {
                   <img
                     src="/ict-yep.jpeg"
                     alt="Delta State ICT-YEP preview"
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-[#c1bdd5]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <div className="absolute inset-0 bg-[#c1bdd5]/70 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center text-center p-4">
+                  <div className="absolute inset-0 bg-[#c1bdd5]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute inset-0 bg-[#c1bdd5]/70 opacity-0 group-hover:opacity-100 transition-all duration-500 
+                  flex items-center justify-center text-center p-4">
                     <p className="text-[24px] text-gray-800 font-semibold">
                       Delta State ICT-YEP
                       <br />
@@ -526,7 +569,7 @@ function App() {
                   </div>
                 </Link>
               </div>
-              <div className='flex flex-col md:flex-row justify-center gap-[20px] md:gap-[40px] lg:gap-[100px]'>
+              <div className='flex flex-col md:flex-row-reverse justify-center gap-[20px] md:gap-[40px] lg:gap-[100px]'>
                 <div className='w-full md:w-3/8'>
                   <h3 className='text-[30px] md:text-[30px] font-semibold pb-3'>Movies</h3>
                   <p className='text-[16px] lg:text-[20px] text-justify pb-4'>
@@ -553,10 +596,11 @@ function App() {
                   <img
                     src="/movies.png"
                     alt="Movies preview"
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-[#c1bdd5]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <div className="absolute inset-0 bg-[#c1bdd5]/70 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center text-center p-4">
+                  <div className="absolute inset-0 bg-[#c1bdd5]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute inset-0 bg-[#c1bdd5]/70 opacity-0 group-hover:opacity-100 transition-all duration-500 flex 
+                  items-center justify-center text-center p-4">
                     <p className="text-[24px] text-gray-800 font-semibold">
                       Movies
                       <br />
