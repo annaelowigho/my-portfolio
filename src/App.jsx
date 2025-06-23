@@ -147,7 +147,7 @@ function App() {
               transition-transform duration-300 hero-view">
                 View My Work
               </a>
-              <a href=""
+              <a href="mailto:annabelowigho@gmail.com"
               className="px-4 md:px-6 py-3 border border-[#00bcff] text-[#00bcff] font-semibold rounded-full hover:bg-[#00bcff]/10 
               transition-colors duration-300">
                 Contact Me
