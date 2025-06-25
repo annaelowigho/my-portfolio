@@ -142,7 +142,7 @@ function App() {
               Crafting pixel-perfect, user-friendly web experiences with React, Tailwind, and JavaScript.
             </p>
             <div className="flex justify-center lg:justify-start gap-4 pt-8">
-              <a href="#projects"
+              {/* <a href="#projects"
               className="px-4 md:px-6 py-3 bg-[#00bcff] text-[#1a1a1a] font-semibold rounded-full hover:bg-[#00d1f7] hover:scale-105 
               transition-transform duration-300 hero-view">
                 View My Work
@@ -151,6 +151,13 @@ function App() {
               className="px-4 md:px-6 py-3 border border-[#00bcff] text-[#00bcff] font-semibold rounded-full hover:bg-[#00bcff]/10 
               transition-colors duration-300">
                 Contact Me
+              </a> */}
+              <a href="#projects">
+                <div className='flex border-2 border-[#fefefe] items-center justify-center px-6 py-2 gap-4 rounded-lg font-semibold
+                hover:bg-[#fefefe] hover:text-[#181918] hover:scale-105 hover:shadow-xl transition-all duration-500 ease-in-out'>
+                  {/* <BsEnvelopeArrowUp /> */}
+                  <button className='cursor-pointer'>View My Work</button>
+                </div>
               </a>
             </div>
           </div>
@@ -230,7 +237,7 @@ function App() {
                 </div>
                 <div className='bg-[#e0e0e0] px-1 py-1 -skew-x-8'>
                   <div className='bg-[#181918] px-10 py-10 text-center'>
-                    <a href="https://drive.google.com/file/d/1oTC9Yyvp84oZoKFztjgOKhzHPKmG3kkl/view?usp=drive_link">
+                    <a href="https://drive.google.com/file/d/1eI5XRHLcJXH5tzGoAq76Oq7jVS-_m3QP/view?usp=drive_link">
                       <button className="relative text-[#e0e0e0] font-semibold text-[20px] md:text-[22px] cursor-pointer after:content-[''] after:absolute 
                       after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-[#e0e0e0] after:scale-x-0 after:origin-right 
                       after:transition-transform after:duration-500 hover:after:scale-x-100 hover:after:origin-left">
