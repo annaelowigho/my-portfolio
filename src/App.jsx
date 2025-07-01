@@ -165,7 +165,7 @@ function App() {
           <div className="relative animate-slide-in">
             <div className="w-[310px] md:w-[480px] h-[310px] md:h-[480px] bg-[#2c2d2c] rounded-full flex items-center justify-center 
             overflow-hidden shadow-2xl border-[6px] border-[#1f1f1f]">
-              <img src="/anna.png" alt="Portrait of Annabel, Frontend Developer" className="scale-110 translate-y-4"/>
+              <img src="/b&w.png" alt="Portrait of Annabel, Frontend Developer" className=""/>
             </div>
             {/* Orbiting Icons with Tooltips */}
             <div className="animate-orbit group absolute bg-[#1f1f1f]/60 w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center 
@@ -237,7 +237,7 @@ function App() {
                 </div>
                 <div className='bg-[#e0e0e0] px-1 py-1 -skew-x-8'>
                   <div className='bg-[#181918] px-10 py-10 text-center'>
-                    <a href="https://drive.google.com/file/d/1eI5XRHLcJXH5tzGoAq76Oq7jVS-_m3QP/view?usp=drive_link">
+                    <a href="https://1drv.ms/b/c/8541752020899765/EfJ1OvUO6lNFt-gDzAdl8pQBb1RD93Yy6mRfX09B4zc9Pg?e=Zz6p9T">
                       <button className="relative text-[#e0e0e0] font-semibold text-[20px] md:text-[22px] cursor-pointer after:content-[''] after:absolute 
                       after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-[#e0e0e0] after:scale-x-0 after:origin-right 
                       after:transition-transform after:duration-500 hover:after:scale-x-100 hover:after:origin-left">
