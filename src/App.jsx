@@ -29,8 +29,8 @@ function App() {
 
   return (
     <>
-      <div className='bg-[#181918] px-[20px]  md:px-[40px] py-[30px] min-h-[100vh] nav-bg'>
-        <nav className='fixed top-0 left-0 w-full z-50 flex items-center justify-between px-[20px] md:px-[40px] 
+      <div className='bg-[#181918] px-[20px]  md:px-[40px]  py-[30px] min-h-[100vh] nav-bg'>
+        <nav className='fixed top-0 left-0 w-full z-50 flex items-center justify-between px-[20px] md:px-[40px] lg:px-[100px] 
         py-[20px] border-b border-[#333] backdrop-blur-sm bg-[#181918]'>
           <NavHashLink smooth to='#hero'>
             <img src="/logo3.png" alt="" className='w-[50px] h-[50px]' />
@@ -135,7 +135,7 @@ function App() {
             <h1 className="text-[40px] lg:text-[40px] xl:text-[60px] font-bold text-center lg:text-left leading-tight">
               Owigho Ufuoma Annabel
             </h1>
-            <p className="text-[30px] md:text-[40px] lg:text-[30px] text-center lg:text-left pt-3 font-semibold text-[#00bcff]">
+            <p className="text-[30px] md:text-[40px] lg:text-[30px] text-center lg:text-left pt-3 font-semibold">
               Frontend Developer
             </p>
             <p className="text-lg text-center lg:text-left pt-5 leading-relaxed">
