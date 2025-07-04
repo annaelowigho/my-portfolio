@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { BsEnvelopeArrowUp } from "react-icons/bs";
 import { IoMdClose } from "react-icons/io";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { IoPersonSharp } from "react-icons/io5";
 import { SiFalcon } from "react-icons/si";
 import { FaReact } from "react-icons/fa6";
@@ -16,6 +16,8 @@ import { RiVuejsFill, RiNextjsFill } from "react-icons/ri";
 import { FaBootstrap } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { AiOutlineJavaScript } from "react-icons/ai";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 
 
@@ -23,6 +25,13 @@ import { AiOutlineJavaScript } from "react-icons/ai";
 
 
 function App() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
 
   const [isMenuOpen, setIsMenuOpen] = useState();
   
@@ -207,8 +216,15 @@ function App() {
           <section id='about'>
             <div className='py-[30px] md:py-[50px] lg:py-[80px] px-[20px] md:px[35px] lg:px-[50px] xl:px-[100px] 
             flex flex-col lg:flex-row items-center gap-10'>
-            <div className='w-full lg:w-1/2'>
-              <h2 className='text-center md:text-start text-[40px] lg:text-[50px] font-semibold'>About me</h2>
+              <div
+              data-aos="fade-right" 
+              data-aos-delay="500" 
+              data-aos-duration="1200" 
+              data-aos-easing="ease-in-out-sine" 
+              data-aos-offset="150" 
+              data-aos-once="true" 
+              className='w-full lg:w-1/2'>
+                <h2 className='text-center md:text-start text-[40px] lg:text-[50px] font-semibold'>About me</h2>
                 <div className='text-justify space-y-4'>
                   <p className=''>
                     I'm Owigho Ufuoma Annabel, a Frontend Developer with a Computer Science background and a passion for building responsive, 
@@ -223,7 +239,14 @@ function App() {
                   </p>
                 </div>
               </div>
-              <div className='w-full lg:w-1/2 xl:pl-14 space-y-5 md:space-y-10'>
+              <div
+              data-aos="fade-left" 
+              data-aos-delay="500" 
+              data-aos-duration="1200" 
+              data-aos-easing="ease-in-out-sine" 
+              data-aos-offset="150" 
+              data-aos-once="true"
+              className='w-full lg:w-1/2 xl:pl-14 space-y-5 md:space-y-10'>
                 <div className='bg-[#e0e0e0] px-1 py-1 -skew-x-8'>
                   <div className='bg-[#181918] px-10 py-10 text-center'>
                     <a href=" https://github.com/annaelowigho">
@@ -305,7 +328,14 @@ function App() {
                     </div>
                 </div>
               </div>
-              <div className='hidden lg:block'>
+              <div
+              data-aos='fade-up'
+              data-aos-delay="500" 
+              data-aos-duration="1200" 
+              data-aos-easing="ease-in-out-sine" 
+              data-aos-offset="150" 
+              data-aos-once="true"  
+              className='hidden lg:block'>
                 <div className='flex items-center justify-center pt-[100px] pb-[50px] gap-[20px] xl:gap-[40px]'>
                   <div className="relative w-[220px] xl:w-[250px] h-[150px] group">
                     <div className="absolute inset-0 bg-[#e0e0e0] z-10 flex flex-col justify-center items-center transition-transform duration-700
@@ -467,8 +497,8 @@ function App() {
                       alt="Electra Motors preview"
                       className="transition-transform duration-500 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-[#c1bdd5]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                    <div className="absolute inset-0 bg-[#c1bdd5]/70 opacity-0 group-hover:opacity-100 transition-all duration-500 
+                    <div className="absolute inset-0 bg-[#e9edec]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div className="absolute inset-0 bg-[#e9edec]/70 opacity-0 group-hover:opacity-100 transition-all duration-500 
                     flex items-center justify-center text-center p-4">
                       <p className="text-[18px] text-gray-800 font-semibold">
                         Electra Motors
@@ -507,8 +537,8 @@ function App() {
                       alt="Auditor general website preview"
                       className="transition-transform duration-500 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-[#c1bdd5]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                    <div className="absolute inset-0 bg-[#c1bdd5]/70 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center text-center p-4">
+                    <div className="absolute inset-0 bg-[#e9edec]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div className="absolute inset-0 bg-[#e9edec]/70 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center text-center p-4">
                       <p className="text-[18px] text-gray-800 font-semibold">
                         DELTA STATE AUDITOR GENERAL PROJECT
                         <br />
@@ -547,8 +577,8 @@ function App() {
                       alt="Delta state ict-yep preview"
                       className="transition-transform duration-500 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-[#c1bdd5]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                    <div className="absolute inset-0 bg-[#c1bdd5]/70 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center text-center p-4">
+                    <div className="absolute inset-0 bg-[#e9edec]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div className="absolute inset-0 bg-[#e9edec]/70 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center text-center p-4">
                       <p className="text-[18px] text-gray-800 font-semibold">
                         DELTA STATE ICT YEP
                         <br />
@@ -587,8 +617,8 @@ function App() {
                       alt="movies site preview"
                       className="transition-transform duration-500 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-[#c1bdd5]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                    <div className="absolute inset-0 bg-[#c1bdd5]/70 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center text-center p-4">
+                    <div className="absolute inset-0 bg-[#e9edec]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div className="absolute inset-0 bg-[#e9edec]/70 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center text-center p-4">
                       <p className="text-[18px] text-gray-800 font-semibold">
                         MOVIES
                         <br />
