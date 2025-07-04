@@ -205,7 +205,7 @@ function App() {
       <div className='bg-[#f0f1f0]'>
           {/* About Section */}
           <section id='about'>
-            <div className='py-[30px] md:py-[50px] lg:py-[80px] px-[20px] md:[35px] lg:px-[50px] xl:px-[100px] 
+            <div className='py-[30px] md:py-[50px] lg:py-[80px] px-[20px] md:px[35px] lg:px-[50px] xl:px-[100px] 
             flex flex-col lg:flex-row items-center gap-10'>
             <div className='w-full lg:w-1/2'>
               <h2 className='text-center md:text-start text-[40px] lg:text-[50px] font-semibold'>About me</h2>
@@ -227,8 +227,8 @@ function App() {
                 <div className='bg-[#e0e0e0] px-1 py-1 -skew-x-8'>
                   <div className='bg-[#181918] px-10 py-10 text-center'>
                     <a href=" https://github.com/annaelowigho">
-                      <button className="relative text-[#e0e0e0] font-semibold text-[20px] md:text-[22px] cursor-pointer after:content-[''] after:absolute 
-                      after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-[#e0e0e0] after:scale-x-0 after:origin-right 
+                      <button className="relative text-[#e0e0e0] font-semibold text-[20px] md:text-[22px] cursor-pointer after:content-[''] 
+                      after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-[#e0e0e0] after:scale-x-0 after:origin-right 
                       after:transition-transform after:duration-500 hover:after:scale-x-100 hover:after:origin-left">
                         Checkout my GitHub Profile
                       </button>
@@ -238,8 +238,8 @@ function App() {
                 <div className='bg-[#e0e0e0] px-1 py-1 -skew-x-8'>
                   <div className='bg-[#181918] px-10 py-10 text-center'>
                     <a href="https://1drv.ms/b/c/8541752020899765/EfJ1OvUO6lNFt-gDzAdl8pQBb1RD93Yy6mRfX09B4zc9Pg?e=Zz6p9T">
-                      <button className="relative text-[#e0e0e0] font-semibold text-[20px] md:text-[22px] cursor-pointer after:content-[''] after:absolute 
-                      after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-[#e0e0e0] after:scale-x-0 after:origin-right 
+                      <button className="relative text-[#e0e0e0] font-semibold text-[20px] md:text-[22px] cursor-pointer after:content-[''] 
+                      after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-[#e0e0e0] after:scale-x-0 after:origin-right 
                       after:transition-transform after:duration-500 hover:after:scale-x-100 hover:after:origin-left">
                         Checkout my CV
                       </button>
@@ -443,46 +443,202 @@ function App() {
         
       </section>
 
-      {/* Projects Section */}
+      {/* Projects Section  */}
+      {/* bg-[#f0f1f0] */}
       <section id='projects'>
-        <div className='bg-[#f0f1f0] py-[50px] px-[30px] xl:px-[150px]'>
-            <h3 className='text-center text-[28px] md:text-[45px] lg:text-[50px] font-semibold'>My Projects</h3>
-            <p className='text-center text-[18px] md:text-[24px] pb-5 md:pb-10 xl:pb-14'>
-              Some Things I've Built 
-            </p>
-            <div className='space-y-10 md:space-y-20'>
-              <div className='flex flex-col md:flex-row justify-center gap-[20px] md:gap-[40px] lg:gap-[100px]'>
-                <div className='w-full md:w-3/8'>
-                  <h3 className='text-[30px] md:text-[30px] font-semibold pb-3'>Electra Motors</h3>
-                  <p className='text-[16px] lg:text-[20px] text-justify pb-4'>
+        <div className=' py-[30px] md:py-[50px] lg:py-[80px]'>
+          <h3 className='text-center text-[28px] md:text-[45px] lg:text-[50px] font-semibold'>My Projects</h3>
+          <div className='py-[30px] md:py-[50px] px-[20px] md:px[35px] lg:px-[50px] xl:px-[150px] flex flex-col md:flex-row gap-10 w-full'>
+              <div className='w-full md:w-1/4 lg:w-1/3 text-[12px] text-center md:text-start space-y-2 flex flex-col items-center justify-center
+              md:items-start md:justify-normal'>
+                <h2>VIEW SOME PROJECTS I HAVE WORKED ON</h2>
+                <hr className='border-1 border-[#e9edec] w-[250px] md:w-[200px] lg:w-[250px]'/>
+              </div>
+              <div className='w-full grid grid-cols-1 md:grid-cols-2 gap-[20px] lg:gap-[50px]'>
+                <div className='space-y-3'>
+                  <Link
+                    to="https://electramotors.ng"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group relative w-full overflow-hidden shadow-sm block"
+                    >
+                    <img
+                      src="/electra-ls.jpeg"
+                      alt="Electra Motors preview"
+                      className="transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-[#c1bdd5]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div className="absolute inset-0 bg-[#c1bdd5]/70 opacity-0 group-hover:opacity-100 transition-all duration-500 
+                    flex items-center justify-center text-center p-4">
+                      <p className="text-[18px] text-gray-800 font-semibold">
+                        Electra Motors
+                        <br />
+                        <span className="text-[18px] font-normal"> 
+                          <span className='font-semibold'>Technology:</span> JavaScript, React, TailwindCSS
+                        </span>
+                      </p>
+                    </div>
+                  </Link>
+                  <h4>ELECTRA MOTORS</h4>
+                  <hr className='border-0.5 border-[#e9edec]'/>
+                  <p className='text-[16px]  text-justify text-[#1f1f1f]'>
                     I was the sole frontend developer for this project - a clean, responsive website built to represent Electra Motors, 
                     the first CNG conversion center in Delta State, Nigeria. The site highlights their innovative services and provides key 
                     information for customers transitioning to cleaner energy.
                   </p>
                   <a 
-                    href="https://electramotors.ng" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className='inline-flex items-center gap-2 text-[18px] text-[#1f1f1f] hover:underline transition duration-500'
-                  >
+                  href="https://electramotors.ng" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className='inline-flex items-center gap-2 text-[18px] text-[#1f1f1f] hover:underline transition duration-500'>
                     <button className='cursor-pointer text-[18px]'>Visit website </button>
-                    <FaExternalLinkAlt className='text-[16px] cursor-pointer'/>
+                    <FaExternalLinkAlt className='text-[13px] cursor-pointer'/>
                   </a>
                 </div>
+                <div className='space-y-3'>
+                  <Link
+                    to="https://www.dsgauditoffice.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group relative w-full overflow-hidden shadow-sm block"
+                    >
+                    <img
+                      src="/auditor-ls.jpeg"
+                      alt="Auditor general website preview"
+                      className="transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-[#c1bdd5]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div className="absolute inset-0 bg-[#c1bdd5]/70 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center text-center p-4">
+                      <p className="text-[18px] text-gray-800 font-semibold">
+                        DELTA STATE AUDITOR GENERAL PROJECT
+                        <br />
+                        <span className="text-[18px] font-normal"> 
+                          <span className='font-semibold'>Technology:</span> Vuejs, Tailwind CSS, JavaScript
+                        </span>
+                      </p>
+                    </div>
+                  </Link>
+                  <h4>DELTA STATE AUDITOR GENERAL PROJECT</h4>
+                  <hr className='border-0.5 border-[#e9edec]'/>
+                  <p className='text-[16px]  text-justify text-[#1f1f1f]'>
+                    I contributed to the development of the official platform for the Delta State Auditor General’s Personnel & Certificate 
+                    Management System (PCMS) — an institutional platform mandated to promote accountability, transparency, and integrity in 
+                    the financial management of public funds across all Ministries, Departments, and Agencies (MDAs) of the Delta State 
+                    Government.
+                  </p>
+                  <a 
+                  href="https://www.dsgauditoffice.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className='inline-flex items-center gap-2 text-[18px] text-[#1f1f1f] hover:underline transition duration-500'>
+                    <button className='cursor-pointer text-[18px]'>Visit website </button>
+                    <FaExternalLinkAlt className='text-[13px] cursor-pointer'/>
+                  </a>
+                </div>
+                <div className='space-y-3'>
+                  <Link
+                    to="https://deltastateictyep.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group relative w-full overflow-hidden shadow-sm block"
+                    >
+                    <img
+                      src="/ict-ls.jpeg"
+                      alt="Delta state ict-yep preview"
+                      className="transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-[#c1bdd5]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div className="absolute inset-0 bg-[#c1bdd5]/70 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center text-center p-4">
+                      <p className="text-[18px] text-gray-800 font-semibold">
+                        DELTA STATE ICT YEP
+                        <br />
+                        <span className="text-[18px] font-normal"> 
+                          <span className='font-semibold'>Technology:</span> HTML, TailwindCSS, JavaScript
+                        </span>
+                      </p>
+                    </div>
+                  </Link>
+                  {/* <img src="/electra-ls.jpeg" alt="" /> */}
+                  <h4>DELTA STATE ICT YEP</h4>
+                  <hr className='border-0.5 border-[#e9edec]'/>
+                  <p className='text-[16px]  text-justify text-[#1f1f1f]'>
+                    I contributed to building the official platform for Delta State's ICT-YEP — a government initiative aimed at empowering 
+                    youths with tech skills. The platform includes a registration page and a full-featured online learning system, complete 
+                    with student and tutor dashboards for course access and management.
+                  </p>
+                  <a 
+                  href="https://deltastateictyep.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className='inline-flex items-center gap-2 text-[18px] text-[#1f1f1f] hover:underline transition duration-500'>
+                    <button className='cursor-pointer text-[18px]'>Visit website </button>
+                    <FaExternalLinkAlt className='text-[13px] cursor-pointer'/>
+                  </a>
+                </div>
+                <div className='space-y-3'>
+                  <Link
+                    to="https://my-movie-tau.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group relative w-full overflow-hidden shadow-sm block"
+                    >
+                    <img
+                      src="/movies-ls.jpeg"
+                      alt="movies site preview"
+                      className="transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-[#c1bdd5]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div className="absolute inset-0 bg-[#c1bdd5]/70 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center text-center p-4">
+                      <p className="text-[18px] text-gray-800 font-semibold">
+                        MOVIES
+                        <br />
+                        <span className="text-[18px] font-normal"> 
+                          <span className='font-semibold'>Technology:</span> JavaScript, React, TailwindCSS
+                        </span>
+                      </p>
+                    </div>
+                  </Link>
+                  {/* <img src="/electra-ls.jpeg" alt="" /> */}
+                  <h4>MOVIES</h4>
+                  <hr className='border-0.5 border-[#e9edec]'/>
+                  <p className='text-[16px]  text-justify text-[#1f1f1f]'>
+                    A simple movie browsing app built while learning React. It uses the TMDB API to fetch real-time movie data, 
+                    allowing users to explore trending films with clean visuals and responsive design. This project helped me understand 
+                    API integration, dynamic routing, and component structuring in React.
+                  </p>
+                  <a 
+                  href="https://my-movie-tau.vercel.app/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className='inline-flex items-center gap-2 text-[18px] text-[#1f1f1f] hover:underline transition duration-500'>
+                    <button className='cursor-pointer text-[18px]'>Visit website </button>
+                    <FaExternalLinkAlt className='text-[13px] cursor-pointer'/>
+                  </a>
+                </div>
+              </div>
+          </div>
+        </div> 
+      </section>
+      {/* <section id='projects'>
+            <h3 className='text-center text-[28px] md:text-[45px] lg:text-[50px] font-semibold'>My Projects</h3>
+        <div className='bg-[#f0f1f0] py-[30px] md:py-[50px] lg:py-[80px] px-[20px] md:px[35px] lg:px-[50px] xl:px-[150px] flex flex-col md:flex-row gap-10 w-full'>
+            <div className='w-full md:w-1/4 lg:w-1/3 text-[12px] text-center md:text-start'><h2>VIEW SOME PROJECTS I HAVE WORKED ON</h2></div>
+            <div className='w-full grid grid-cols-1 md:grid-cols-2 gap-[20px] lg:gap-[50px]'>
+              <div className='space-y-3'>
                 <Link
                   to="https://electramotors.ng"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group relative w-full md:w-[400px] h-[500px] overflow-hidden rounded-lg shadow-md block"
+                  className="group relative w-full overflow-hidden shadow-sm block"
                   >
                   <img
-                    src="/electra-img.jpeg"
+                    src="/electra-ls.jpeg"
                     alt="Electra Motors preview"
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-[#c1bdd5]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   <div className="absolute inset-0 bg-[#c1bdd5]/70 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center text-center p-4">
-                    <p className="text-[24px] text-gray-800 font-semibold">
+                    <p className="text-[18px] text-gray-800 font-semibold">
                       Electra Motors
                       <br />
                       <span className="text-[18px] font-normal"> 
@@ -491,41 +647,38 @@ function App() {
                     </p>
                   </div>
                 </Link>
+                <h4>ELECTRA MOTORS</h4>
+                <hr className='border-0.5 border-[#e9edec]'/>
+                <p className='text-[16px]  text-justify text-[#1f1f1f]'>
+                  I was the sole frontend developer for this project - a clean, responsive website built to represent Electra Motors, 
+                  the first CNG conversion center in Delta State, Nigeria. The site highlights their innovative services and provides key 
+                  information for customers transitioning to cleaner energy.
+                </p>
+                <a 
+                href="https://electramotors.ng" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className='inline-flex items-center gap-2 text-[18px] text-[#1f1f1f] hover:underline transition duration-500'>
+                  <button className='cursor-pointer text-[18px]'>Visit website </button>
+                  <FaExternalLinkAlt className='text-[13px] cursor-pointer'/>
+                </a>
               </div>
-              <div className='flex flex-col md:flex-row-reverse justify-center gap-[20px] md:gap-[40px] lg:gap-[100px]'>
-                <div className='w-full md:w-3/8'>
-                  <h3 className='text-[30px] md:text-[30px] font-semibold pb-3'>Delta State Auditor General (PCMS)</h3>
-                  <p className='text-[16px] lg:text-[20px] text-justify pb-4'>
-                    I contributed to the development of the official platform for the Delta State Auditor General’s Personnel & Certificate 
-                    Management System (PCMS) — an institutional platform mandated to promote accountability, transparency, and integrity in 
-                    the financial management of public funds across all Ministries, Departments, and Agencies (MDAs) of the Delta State 
-                    Government.
-                  </p>
-                  <a 
-                    href="https://www.dsgauditoffice.com/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className='inline-flex items-center gap-2 text-[18px] text-[#1f1f1f] hover:underline transition duration-500'
-                  >
-                    <button className='cursor-pointer text-[18px]'>Visit website </button>
-                    <FaExternalLinkAlt className='text-[16px] cursor-pointer'/>
-                  </a>
-                </div>
+              <div className='space-y-3'>
                 <Link
                   to="https://www.dsgauditoffice.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group relative w-full md:w-[400px] h-[500px] overflow-hidden rounded-lg shadow-md block"
+                  className="group relative w-full overflow-hidden shadow-sm block"
                   >
                   <img
-                    src="/auditor-general.jpeg"
-                    alt="Delta State ICT-YEP preview"
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    src="/auditor-ls.jpeg"
+                    alt="Auditor general website preview"
+                    className="transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-[#c1bdd5]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   <div className="absolute inset-0 bg-[#c1bdd5]/70 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center text-center p-4">
-                    <p className="text-[24px] text-gray-800 font-semibold">
-                      Delta State Auditor General (PCMS)
+                    <p className="text-[18px] text-gray-800 font-semibold">
+                      DELTA STATE AUDITOR GENERAL PROJECT
                       <br />
                       <span className="text-[18px] font-normal"> 
                         <span className='font-semibold'>Technology:</span> Vuejs, Tailwind CSS, JavaScript
@@ -533,41 +686,39 @@ function App() {
                     </p>
                   </div>
                 </Link>
+                <h4>DELTA STATE AUDITOR GENERAL PROJECT</h4>
+                <hr className='border-0.5 border-[#e9edec]'/>
+                <p className='text-[16px]  text-justify text-[#1f1f1f]'>
+                  I contributed to the development of the official platform for the Delta State Auditor General’s Personnel & Certificate 
+                  Management System (PCMS) — an institutional platform mandated to promote accountability, transparency, and integrity in 
+                  the financial management of public funds across all Ministries, Departments, and Agencies (MDAs) of the Delta State 
+                  Government.
+                </p>
+                <a 
+                href="https://www.dsgauditoffice.com/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className='inline-flex items-center gap-2 text-[18px] text-[#1f1f1f] hover:underline transition duration-500'>
+                  <button className='cursor-pointer text-[18px]'>Visit website </button>
+                  <FaExternalLinkAlt className='text-[13px] cursor-pointer'/>
+                </a>
               </div>
-              <div className='flex flex-col md:flex-row justify-center gap-[20px] md:gap-[40px] lg:gap-[100px]'>
-                <div className='w-full md:w-3/8'>
-                  <h3 className='text-[30px] md:text-[30px] font-semibold pb-3'>Delta State ICT-YEP</h3>
-                  <p className='text-[16px] lg:text-[20px] text-justify pb-4'>
-                    I contributed to building the official platform for Delta State's ICT-YEP — a government initiative aimed at empowering 
-                    youths with tech skills. The platform includes a registration page and a full-featured online learning system, complete 
-                    with student and tutor dashboards for course access and management.
-                  </p>
-                  <a 
-                    href="https://deltastateictyep.com/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className='inline-flex items-center gap-2 text-[18px] text-[#1f1f1f] hover:underline transition duration-500'
-                  >
-                    <button className='cursor-pointer text-[18px]'>Visit website </button>
-                    <FaExternalLinkAlt className='text-[16px] cursor-pointer'/>
-                  </a>
-                </div>
+              <div className='space-y-3'>
                 <Link
                   to="https://deltastateictyep.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group relative w-full md:w-[400px] h-[500px] overflow-hidden rounded-lg shadow-md block"
+                  className="group relative w-full overflow-hidden shadow-sm block"
                   >
                   <img
-                    src="/ict-yep.jpeg"
-                    alt="Delta State ICT-YEP preview"
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    src="/ict-ls.jpeg"
+                    alt="Delta state ict-yep preview"
+                    className="transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-[#c1bdd5]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  <div className="absolute inset-0 bg-[#c1bdd5]/70 opacity-0 group-hover:opacity-100 transition-all duration-500 
-                  flex items-center justify-center text-center p-4">
-                    <p className="text-[24px] text-gray-800 font-semibold">
-                      Delta State ICT-YEP
+                  <div className="absolute inset-0 bg-[#c1bdd5]/70 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center text-center p-4">
+                    <p className="text-[18px] text-gray-800 font-semibold">
+                      DELTA STATE ICT YEP
                       <br />
                       <span className="text-[18px] font-normal"> 
                         <span className='font-semibold'>Technology:</span> HTML, TailwindCSS, JavaScript
@@ -575,41 +726,38 @@ function App() {
                     </p>
                   </div>
                 </Link>
+                <h4>DELTA STATE ICT YEP</h4>
+                <hr className='border-0.5 border-[#e9edec]'/>
+                <p className='text-[16px]  text-justify text-[#1f1f1f]'>
+                  I contributed to building the official platform for Delta State's ICT-YEP — a government initiative aimed at empowering 
+                  youths with tech skills. The platform includes a registration page and a full-featured online learning system, complete 
+                  with student and tutor dashboards for course access and management.
+                </p>
+                <a 
+                href="https://deltastateictyep.com/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className='inline-flex items-center gap-2 text-[18px] text-[#1f1f1f] hover:underline transition duration-500'>
+                  <button className='cursor-pointer text-[18px]'>Visit website </button>
+                  <FaExternalLinkAlt className='text-[13px] cursor-pointer'/>
+                </a>
               </div>
-              <div className='flex flex-col md:flex-row-reverse justify-center gap-[20px] md:gap-[40px] lg:gap-[100px]'>
-                <div className='w-full md:w-3/8'>
-                  <h3 className='text-[30px] md:text-[30px] font-semibold pb-3'>Movies</h3>
-                  <p className='text-[16px] lg:text-[20px] text-justify pb-4'>
-                    A simple movie browsing app built while learning React. It uses the TMDB API to fetch real-time movie data, 
-                    allowing users to explore trending films with clean visuals and responsive design. This project helped me understand 
-                    API integration, dynamic routing, and component structuring in React.
-                  </p>
-                  <a 
-                    href="https://my-movie-tau.vercel.app/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className='inline-flex items-center gap-2 text-[18px] text-[#1f1f1f] hover:underline transition duration-500'
-                  >
-                    <button className='cursor-pointer text-[18px]'>Visit website </button>
-                    <FaExternalLinkAlt className='text-[16px] cursor-pointer'/>
-                  </a>
-                </div>
+              <div className='space-y-3'>
                 <Link
                   to="https://my-movie-tau.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group relative w-full md:w-[400px] h-[500px] overflow-hidden rounded-lg shadow-md block"
+                  className="group relative w-full overflow-hidden shadow-sm block"
                   >
                   <img
-                    src="/movies.png"
-                    alt="Movies preview"
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    src="/movies-ls.jpeg"
+                    alt="movies site preview"
+                    className="transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-[#c1bdd5]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  <div className="absolute inset-0 bg-[#c1bdd5]/70 opacity-0 group-hover:opacity-100 transition-all duration-500 flex 
-                  items-center justify-center text-center p-4">
-                    <p className="text-[24px] text-gray-800 font-semibold">
-                      Movies
+                  <div className="absolute inset-0 bg-[#c1bdd5]/70 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center text-center p-4">
+                    <p className="text-[18px] text-gray-800 font-semibold">
+                      MOVIES
                       <br />
                       <span className="text-[18px] font-normal"> 
                         <span className='font-semibold'>Technology:</span> JavaScript, React, TailwindCSS
@@ -617,10 +765,25 @@ function App() {
                     </p>
                   </div>
                 </Link>
+                <h4>MOVIES</h4>
+                <hr className='border-0.5 border-[#e9edec]'/>
+                <p className='text-[16px]  text-justify text-[#1f1f1f]'>
+                  A simple movie browsing app built while learning React. It uses the TMDB API to fetch real-time movie data, 
+                  allowing users to explore trending films with clean visuals and responsive design. This project helped me understand 
+                  API integration, dynamic routing, and component structuring in React.
+                </p>
+                <a 
+                href="https://my-movie-tau.vercel.app/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className='inline-flex items-center gap-2 text-[18px] text-[#1f1f1f] hover:underline transition duration-500'>
+                  <button className='cursor-pointer text-[18px]'>Visit website </button>
+                  <FaExternalLinkAlt className='text-[13px] cursor-pointer'/>
+                </a>
               </div>
             </div>
         </div>
-      </section>
+      </section> */}
 
       <div className='bg-[#181918] py-5 '>
         <p className='text-center text-white text-[16px]'>© 2025 Annabel - All Rights Reserved</p>
