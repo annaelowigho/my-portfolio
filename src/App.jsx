@@ -479,8 +479,8 @@ function App() {
         <div className=' py-[30px] md:py-[50px] lg:py-[80px]'>
           <h3 className='text-center text-[28px] md:text-[45px] lg:text-[50px] font-semibold'>My Projects</h3>
           <div className='py-[30px] md:py-[50px] px-[20px] md:px[35px] lg:px-[50px] xl:px-[150px] flex flex-col md:flex-row gap-10 w-full'>
-              <div className='w-full md:w-1/4 lg:w-1/3 text-[12px] text-center md:text-start space-y-2 flex flex-col items-center justify-center
-              md:items-start md:justify-normal'>
+              <div className='w-full md:w-1/4 lg:w-1/3 text-[12px] text-center md:text-start space-y-2 flex flex-col items-center 
+              justify-center md:items-start md:justify-normal'>
                 <h2>VIEW SOME PROJECTS I HAVE WORKED ON</h2>
                 <hr className='border-1 border-[#e9edec] w-[250px] md:w-[200px] lg:w-[250px]'/>
               </div>
