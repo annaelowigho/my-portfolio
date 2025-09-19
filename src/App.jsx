@@ -79,7 +79,7 @@ function App() {
             </button>
 
             {isMenuOpen && (
-              <div className="fixed top-0 right-0 h-screen w-[80%] p-5 bg-white z-40 shadow-lg">
+              <div className="fixed p-5 bg-white z-40 shadow-lg">
                 <ul onClick={() => setIsMenuOpen(false)} className="pt-20 text-black text-[20px] font-semibold">
                   <NavHashLink smooth to='#about'>
                     <li className='cursor-pointer'>About</li>
@@ -211,7 +211,7 @@ function App() {
         </div>
       </div>
 
-      <div className='bg-[#f0f1f0]'>
+      <div className='bg-[#f0f0f0]'>
           {/* About Section */}
           <section id='about'>
             <div className='py-[30px] md:py-[50px] lg:py-[80px] px-[20px] md:px[35px] lg:px-[50px] xl:px-[100px] 
@@ -413,7 +413,7 @@ function App() {
       </div>
 
       {/* Skills Section */}
-      <section id='skills'>
+      <section id='skills' className='bg-[#f0f0f0]'>
         <div className='py-[30px] md:py-[50px] lg:py-[80px] px-[20px] md:[35px] lg:px-[50px] xl:px-[100px]'>
           <h3 className='text-center text-[28px] md:text-[45px] lg:text-[50px] font-semibold pb-2'>My Skills</h3>
           <p className='text-center text-[18px] md:text-[24px] pb-5 md:pb-10 xl:pb-14'>
@@ -475,7 +475,7 @@ function App() {
 
       {/* Projects Section  */}
       {/* bg-[#f0f1f0] */}
-      <section id='projects'>
+      <section id='projects' className='bg-[#f0f0f0]'>
         <div className='py-[30px] md:py-[50px] lg:py-[80px]'>
           <h3 className='text-center text-[28px] md:text-[45px] lg:text-[50px] font-semibold'>My Projects</h3>
           <div className='py-[30px] md:py-[50px] px-[20px] md:px[35px] lg:px-[50px] xl:px-[150px] flex flex-col md:flex-row gap-10 w-full'>
@@ -485,6 +485,46 @@ function App() {
                 <hr className='border-1 border-[#e9edec] w-[250px] md:w-[200px] lg:w-[250px]'/>
               </div>
               <div className='w-full grid grid-cols-1 md:grid-cols-2 gap-[20px] lg:gap-[50px]'>
+                <div className='space-y-3'>
+                  <Link
+                    to="https://schoolville.academy/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group relative w-full overflow-hidden shadow-sm block"
+                    >
+                    <img
+                      src="/schoolville-academy.jpeg"
+                      alt="Schoolville Academy preview"
+                      className="transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-[#e9edec]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div className="absolute inset-0 bg-[#e9edec]/70 opacity-0 group-hover:opacity-100 transition-all duration-500 
+                    flex items-center justify-center text-center p-4">
+                      <p className="text-[18px] text-gray-800 font-semibold">
+                        Schoolville Academy
+                        <br />
+                        <span className="text-[18px] font-normal"> 
+                          <span className='font-semibold'>Technology:</span> JavaScript, React, TailwindCSS
+                        </span>
+                      </p>
+                    </div>
+                  </Link>
+                  <h4>SCHOOLVILLE ACADEMY</h4>
+                  <hr className='border-0.5 border-[#e9edec]'/>
+                  <p className='text-[16px]  text-justify text-[#1f1f1f]'>
+                    I was the sole frontend developer for this project — a fully responsive website designed to showcase 
+                    Schoolville Academy, Courses, and Programs. The site delivers a clean, user-friendly experience while highlighting 
+                    their services and making essential information easily accessible to customers.
+                  </p>
+                  <a 
+                  href="https://electramotors.ng" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className='inline-flex items-center gap-2 text-[18px] text-[#1f1f1f] hover:underline transition duration-500'>
+                    <button className='cursor-pointer text-[18px]'>Visit website </button>
+                    <FaExternalLinkAlt className='text-[13px] cursor-pointer'/>
+                  </a>
+                </div>
                 <div className='space-y-3'>
                   <Link
                     to="https://electramotors.ng"
