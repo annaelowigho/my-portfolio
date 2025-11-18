@@ -38,7 +38,7 @@ function App() {
 
   return (
     <>
-      <div className='bg-[#181918] px-[20px]  md:px-[40px]  py-[30px] min-h-[100vh] nav-bg'>
+      <div className='bg-[#181918] px-[20px]  md:px-[40px]  py-[30px] min-h-[100vh] nav-bg overflow-hidden'>
         <nav className='fixed top-0 left-0 w-full z-50 flex items-center justify-between px-[20px] md:px-[40px] lg:px-[100px] 
         py-[20px] border-b border-[#333] backdrop-blur-sm bg-[#181918]'>
           <NavHashLink smooth to='#hero'>
@@ -136,7 +136,7 @@ function App() {
         {/* Hero Section */}
         <div id="hero"
         className="pt-[130px] md:pt-40 lg:pt-34 px-[20px] lg:px-[50px] flex flex-col lg:flex-row items-center justify-between gap-16 
-        md:gap-34 lg:gap-8 xl:gap-20"
+        md:gap-34 lg:gap-8 xl:gap-20 overflow-hidden"
         onClick={() => setIsMenuOpen(false)}
         role="region"
         aria-label="Hero section">
@@ -211,7 +211,7 @@ function App() {
         </div>
       </div>
 
-      <div className='bg-[#f0f0f0]'>
+      <div className='bg-[#f0f0f0] overflow-hidden'>
           {/* About Section */}
           <section id='about'>
             <div className='py-[30px] md:py-[50px] lg:py-[80px] px-[20px] md:px[35px] lg:px-[50px] xl:px-[100px] 
@@ -485,6 +485,46 @@ function App() {
                 <hr className='border-1 border-[#e9edec] w-[250px] md:w-[200px] lg:w-[250px]'/>
               </div>
               <div className='w-full grid grid-cols-1 md:grid-cols-2 gap-[20px] lg:gap-[50px]'>
+                <div className='space-y-3'>
+                  <Link
+                    to="https://www.deltatechweek.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group relative w-full overflow-hidden shadow-sm block"
+                    >
+                    <img
+                      src="/dtw.jpeg"
+                      alt="Delta Tech Week preview"
+                      className="transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-[#e9edec]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div className="absolute inset-0 bg-[#e9edec]/70 opacity-0 group-hover:opacity-100 transition-all duration-500 
+                    flex items-center justify-center text-center p-4">
+                      <p className="text-[18px] text-gray-800 font-semibold">
+                        Delta Tech Week
+                        <br />
+                        <span className="text-[18px] font-normal"> 
+                          <span className='font-semibold'>Technology:</span> TypeScript, React, TailwindCSS
+                        </span>
+                      </p>
+                    </div>
+                  </Link>
+                  <h4>DELTA TECH WEEK</h4>
+                  <hr className='border-0.5 border-[#e9edec]'/>
+                  <p className='text-[16px]  text-justify text-[#1f1f1f]'>
+                    Sole Frontend developer for the Delta Tech Week 2025 is the inaugural flagship technology festival organized by the 
+                    Delta State Government (through the Ministry of Science and Technology), in partnership with startups, corporates, 
+                    academia, and ecosystem enablers.
+                  </p>
+                  <a 
+                  href="https://www.deltatechweek.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className='inline-flex items-center gap-2 text-[18px] text-[#1f1f1f] hover:underline transition duration-500'>
+                    <button className='cursor-pointer text-[18px]'>Visit website </button>
+                    <FaExternalLinkAlt className='text-[13px] cursor-pointer'/>
+                  </a>
+                </div>
                 <div className='space-y-3'>
                   <Link
                     to="https://schoolville.academy/"
