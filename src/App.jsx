@@ -487,6 +487,47 @@ function App() {
               <div className='w-full grid grid-cols-1 md:grid-cols-2 gap-[20px] lg:gap-[50px]'>
                 <div className='space-y-3'>
                   <Link
+                    to="https://connect.schoolville.com/login"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group relative w-full overflow-hidden shadow-sm block"
+                    >
+                    <img
+                      src="/connect.jpeg"
+                      alt="connect lms"
+                      className="transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-[#e9edec]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div className="absolute inset-0 bg-[#e9edec]/70 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center text-center p-4">
+                      <p className="text-[18px] text-gray-800 font-semibold">
+                        CONNECT (LMS)
+                        <br />
+                        <span className="text-[18px] font-normal"> 
+                          <span className='font-semibold'>Technology:</span> Laravel, Blade, TailwindCSS, and Alpine.js
+                        </span>
+                      </p>
+                    </div>
+                  </Link>
+                  {/* <img src="/electra-ls.jpeg" alt="" /> */}
+                  <h4>CONNECT (LMS)</h4>
+                  <hr className='border-0.5 border-[#e9edec]'/>
+                  <p className='text-[16px]  text-justify text-[#1f1f1f]'>
+                    CONNECT (LMS) is a Learning Management System designed to manage courses, users, 
+                    and academic workflows efficiently. Built with Laravel, Blade, Tailwind and Alpine.js, 
+                    the platform emphasizes structured architecture, responsive UI, and smooth 
+                    integration between frontend and backend components.
+                  </p>
+                  <a 
+                  href="https://connect.schoolville.com/login" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className='inline-flex items-center gap-2 text-[18px] text-[#1f1f1f] hover:underline transition duration-500'>
+                    <button className='cursor-pointer text-[18px]'>Visit website </button>
+                    <FaExternalLinkAlt className='text-[13px] cursor-pointer'/>
+                  </a>
+                </div>
+                <div className='space-y-3'>
+                  <Link
                     to="https://www.deltatechweek.com/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -527,37 +568,38 @@ function App() {
                 </div>
                 <div className='space-y-3'>
                   <Link
-                    to="https://schoolville.academy/"
+                    to="https://amnewshub.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group relative w-full overflow-hidden shadow-sm block"
                     >
                     <img
-                      src="/schoolville-academy.jpeg"
-                      alt="Schoolville Academy preview"
+                      src="/am-news.jpeg"
+                      alt="AM news preview"
                       className="transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-[#e9edec]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                     <div className="absolute inset-0 bg-[#e9edec]/70 opacity-0 group-hover:opacity-100 transition-all duration-500 
                     flex items-center justify-center text-center p-4">
                       <p className="text-[18px] text-gray-800 font-semibold">
-                        Schoolville Academy
+                        AM News Hub
                         <br />
                         <span className="text-[18px] font-normal"> 
-                          <span className='font-semibold'>Technology:</span> JavaScript, React, TailwindCSS
+                          <span className='font-semibold'>Technology:</span> Laravel, Blade, TailwindCSS, and Alpine.js
                         </span>
                       </p>
                     </div>
                   </Link>
-                  <h4>SCHOOLVILLE ACADEMY</h4>
+                  <h4>AM News Hub</h4>
                   <hr className='border-0.5 border-[#e9edec]'/>
                   <p className='text-[16px]  text-justify text-[#1f1f1f]'>
-                    I was the sole frontend developer for this project — a fully responsive website designed to showcase 
-                    Schoolville Academy, Courses, and Programs. The site delivers a clean, user-friendly experience while highlighting 
-                    their services and making essential information easily accessible to customers.
+                    AM News Hub is a modern news publishing platform designed to manage 
+                    articles and media content efficiently. Built with Laravel, 
+                    Blade, Tailwind CSS, and Alpine.js, it focuses on responsive design, 
+                    structured content management, and smooth user interaction.
                   </p>
                   <a 
-                  href="https://electramotors.ng" 
+                  href="https://amnewshub.com/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className='inline-flex items-center gap-2 text-[18px] text-[#1f1f1f] hover:underline transition duration-500'>
@@ -678,46 +720,6 @@ function App() {
                   </p>
                   <a 
                   href="https://deltastateictyep.com/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className='inline-flex items-center gap-2 text-[18px] text-[#1f1f1f] hover:underline transition duration-500'>
-                    <button className='cursor-pointer text-[18px]'>Visit website </button>
-                    <FaExternalLinkAlt className='text-[13px] cursor-pointer'/>
-                  </a>
-                </div>
-                <div className='space-y-3'>
-                  <Link
-                    to="https://my-movie-tau.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group relative w-full overflow-hidden shadow-sm block"
-                    >
-                    <img
-                      src="/movies-ls.jpeg"
-                      alt="movies site preview"
-                      className="transition-transform duration-500 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-[#e9edec]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                    <div className="absolute inset-0 bg-[#e9edec]/70 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center text-center p-4">
-                      <p className="text-[18px] text-gray-800 font-semibold">
-                        MOVIES
-                        <br />
-                        <span className="text-[18px] font-normal"> 
-                          <span className='font-semibold'>Technology:</span> JavaScript, React, TailwindCSS
-                        </span>
-                      </p>
-                    </div>
-                  </Link>
-                  {/* <img src="/electra-ls.jpeg" alt="" /> */}
-                  <h4>MOVIES</h4>
-                  <hr className='border-0.5 border-[#e9edec]'/>
-                  <p className='text-[16px]  text-justify text-[#1f1f1f]'>
-                    A simple movie browsing app built while learning React. It uses the TMDB API to fetch real-time movie data, 
-                    allowing users to explore trending films with clean visuals and responsive design. This project helped me understand 
-                    API integration, dynamic routing, and component structuring in React.
-                  </p>
-                  <a 
-                  href="https://my-movie-tau.vercel.app/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className='inline-flex items-center gap-2 text-[18px] text-[#1f1f1f] hover:underline transition duration-500'>
@@ -896,7 +898,7 @@ function App() {
       </section> */}
 
       <div className='bg-[#181918] py-5 '>
-        <p className='text-center text-white text-[16px]'>© 2025 Annabel - All Rights Reserved</p>
+        <p className='text-center text-white text-[16px]'>© 2026 Annabel - All Rights Reserved</p>
       </div>
     </>
   )
